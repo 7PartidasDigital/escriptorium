@@ -125,7 +125,7 @@ Vamos a subir un pdf (lo tiene en esta dirección). Bájalo a tu ordenador, es m
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_015.png?raw=true")
 ```
 
-Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes., mienrtras que el botón Ìmport` papaderá y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice.
+Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes. Mientras suben las imágenes, el botón `Import` parpaderá y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice.
 
 ```{r es_uva16, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_016.png?raw=true")
