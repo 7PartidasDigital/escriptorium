@@ -1,0 +1,26 @@
+---
+title: "Manual eScriptorium"
+author: "Filología Digital UVa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<div>
+<center>
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
+</center>
+</div>
+
+# Manual de eScriptorium
+Este manual está pensado para ayudar a los usuarios a familiarizarse con el uso de eScriptorium, una herramienta de transcripción y edición de textos históricos. A través de este manual, se proporcionarán instrucciones detalladas sobre cómo utilizar las diferentes funcionalidades de la plataforma.
+
+Si tienes una cuenta activa en la instancia `eScriptorium` de la Universidad de Valladolid, puedes acceder a la plataforma con este enlace [http://escriptorium.eca-simm.uva.es/](http://escriptorium.eca-simm.uva.es/).
+
+Aparecerá una pantalla de inicio de sesión donde deberás introducir tu usuario y contraseña.
+
+```{r es_uva01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/7PartidasDigital/Taller-UVa/master/images/UVa_001.png")
+``` 
+
+
+Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte superior de la página o en el botón más pequeño que hay en la parte inferior de la barra blanca de la izquierda.
