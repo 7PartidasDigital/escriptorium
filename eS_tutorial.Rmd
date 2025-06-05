@@ -19,8 +19,11 @@ Si tienes una cuenta activa en la instancia `eScriptorium` de la Universidad de 
 Aparecerá una pantalla de inicio de sesión donde deberás introducir tu usuario y contraseña.
 
 ```{r es_uva01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
-knitr::include_graphics("https://raw.githubusercontent.com/7PartidasDigital/Taller-UVa/master/images/UVa_001.png")
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_001.png?raw=true")
+``` 
+Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte superior de la página o en el botón más pequeño que hay en la parte inferior de la barra blanca de la izquierda. Cuando hayas hecho clic en cualquiera de los dos, aparecerá las casillas para que introduzcas tu usuario y contraseña.
+
+```{r es_uva03, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_003.png?raw=true")
 ``` 
 
-
-Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte superior de la página o en el botón más pequeño que hay en la parte inferior de la barra blanca de la izquierda.
