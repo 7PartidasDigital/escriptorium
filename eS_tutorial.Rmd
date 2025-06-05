@@ -27,3 +27,83 @@ Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte sup
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_003.png?raw=true")
 ``` 
 
+Una vez introducidos los datos, pulsa el botón `login` y accederás a la página principal de `eScriptorium` (lo reducimos a la abreviatura `eS`).
+
+```{r es_uva04, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_004.png?raw=true")
+``` 
+Así es como aparece la primera vez que entras. Así que vamos a dar un pequeño paseo. Abajo a la izquierda, en la barra blanca, tienes un menú con varias opciones. La primera es `Home`, que te lleva a la página principal. La segunda es `Projects`, donde puedes ver los proyectos en los que estás trabajando. La tercera es `Models`, donde puedes ver los modelos de transcripción y segmentación a los que tienes acceso. La cuarta es `Task`, donde puedes ver qué tareas y procesos está realizando tu cuenta en `eS`.
+
+La página `Home` es casi idéntica a la de página en la que pulsate en `Sign in`, solo que en la barra lateral izquierda tienes todos elementos básicos de navegación.
+
+Pulsa sobre `Profile`.
+
+```{r es_uva05, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='10%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_005.png?raw=true")
+``` 
+
+Se abrirá una ventanita con tres posibilidades. haz clic en la que dice `Profile Settings`. Aparecerá una página con tu perfil, donde podrás ver tu correo electrónico las demás casillas están vacías. Rellana la de tu nombre y apellidos. Si no lo haces, para la máquina serás el nombre del usuario que has introducido al entrar.
+
+```{r es_uva06, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_006.png?raw=true")
+``` 
+
+Si haces clic en la casilla `Legacy mode` aparecerá un aspecto diferente de la plataforma. Vamos a emplearlo a lo largo de todo este manual. Así que haz clic en él y pulsa el botón `Save`.
+
+El aspecto de la página habrá cambiado y el menú ya no estára en el margen izquierdo, sino en la barra superior, en una franja de color negro.
+
+```{r es_uva07, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_007.png?raw=true")
+``` 
+
+Si pulsas sobre `API` key aparecerá una ventana con un código. Este código es importante, ya que te permitirá acceder a la API de `eS` y realizar tareas automatizadas. Por el momento no lo vas a utilizar, es para usuarios avanzados, y estamos dando los primeros pasos.
+
+En `Files` encontrarás la lista de los ficheros que has pedido a `eS` que descargue. Ahora estará vacío, ya que no has le has pedido que descargue ninguno.
+
+En `Teams` podrás ver los equipos a los que perteneces. Si no perteneces a ninguno, aparecerá vacío. Pero puedes crear uno nuevo. Solo tienes que darle un nombre y hacer clic en `Create`. Por el momento, no hagas nada.
+
+Por último, tiene `Invitations`, donde podrás ver las invitaciones que has enviado o recibido para unirte a un equipo. Aparecerá en blanco, con un cartelito que te informará de que no tienes invitaciones aún.
+
+En la nueva visión de `eS`, la barra negra de arriba tiene un menú desplegable que te permite acceder a las diferentes secciones de la plataforma. En la parte derecha, tienes tu nombre de usuario y un botón para abrir el desplegable que antes tenías abajo a la izquierda.
+
+
+```{r es_uva08, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='10%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_008.png?raw=true")
+``` 
+
+Es importante que cambies la contraseña de tu cuenta. Para ello, haz clic en `Change password`. Aparecerá una ventana donde podrás introducir tu contraseña actual y la nueva. Introduce la nueva contraseña dos veces para confirmarla y haz clic en `Change my password`.
+
+Un botón importante del menú desplegabla, es el de salida, `Logout`. Cuando quieras salir de `eS`, haz clic en él y se cerrará la sesión.
+
+
+## Mi primer proyecto
+
+Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. Un proyecto en `eS` es un conjunto de documentos que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en `My Projects` en la barra negra superior y a continuación haz clic en el botón verde de la derecha que dice `Create new Project`.
+
+Aparecerá una ventana donde podrás introducir el nombre del proyecto y una descripción del mismo. Generalmente será el manual de trasncripción que see usará. Puede ser una URL a un documento externo.
+
+```{r es_uva09, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_009.png?raw=true")
+``` 
+
+Para este tutorial, vamos a crear un proyecto llamado `Primer documento`. Introduce el nombre y la descripción (si lo crees necesario) y haz clic en `Create`. tan pronto como lo hagas, aparecerá una ventana con el proyecto que acabas de crear. Si no aparece, haz clic en `My Projects` y verás el proyecto que acabas de crear.
+
+```{r es_uva10, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_010.png?raw=true")
+```
+
+Fíjate que dice `Primer documento` el nombre del usuario que lo ha creado, en este caso `7PartidasDigital` y por último dice que hay 0 documentos.
+
+Un proyecto puede tener varios documentos, pero por el momento solo vamos a crear uno. Para ello, haz clic en el nombre del proyecto y aparecerá una página con la información del proyecto.
+
+```{r es_uva11, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_011.png?raw=true")
+```
+
+Está totalmente vacío. En la parte superior, verás un botón verde que dice `Create new Document`. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del doumento.
+
+```{r es_uva12, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012.png?raw=true")
+```
+
+
