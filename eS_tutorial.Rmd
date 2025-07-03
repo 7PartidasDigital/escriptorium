@@ -122,8 +122,7 @@ Lo primero es darle un nombre la documento. En este caso, vamos a llamarlo `INCU
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012a.png?raw=true")
 ```
 
-
-Si todo ha ido bien, aparecerá un mensaje que dice `Document created successfully` y verás el documento que acabas de crear en la lista de documentos del proyecto.
+Si todo ha ido bien, aparecerá un mensaje que dice `Document created successfully` y que la banda verde ya no dice `Create` sino `Update`, por si quieres actualizar algún elemento de los metadatos del documento.
 
 A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastras las desde la carpeta en que las tengas y soltarlas en la ventana, o hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.
 
