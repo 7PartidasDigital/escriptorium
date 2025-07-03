@@ -162,7 +162,7 @@ Una vez activada la edición de regiones, si haces clic dentro de cualquiera de 
 
 Activa las regiones, y haz clic en la pequeña región que hay en la parte superior, pues la vas a borrar. Al hacer clic sobre esa zona, el perímetro de la región se llenará de cuadraditos blancos. Son los puntos que delimitan la región.
 
-```{r segmentacion_14, echo=F, fig.cap="Edición de región activado", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+```{r segmentacion_14, echo=F, fig.cap="Región activada", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_037.png?raw=true")
 ```
 
