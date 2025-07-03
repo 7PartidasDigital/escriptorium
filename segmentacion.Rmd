@@ -20,11 +20,82 @@ La segmentación es es proceso básico para poder llevar a cabo la transcripció
 
 Se abrirá una nueva página donde podrás ver los modelos de segmentación que tienes disponibles. Son los que los usuarios del grupo de `Filología Digital` de la Universidad hemos creado (INCUANBLES_HSMS_v3_1.2_best) u otros que hemos localizado en la red y que son públicos como CatMus_Medieval-160. Los que hay disponibles ahora mismo son suficientes para este manual.
 
-```{r segmentacion_01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+```{r segmentacion_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
 ``` 
 
 Si te fijas en la segunda columna, verás que en unos casos dice `Recognize` y en otros `Segment`. Esto es porque algunos modelos están preparados para reconocer el texto y otros solo para segmentarlo. La columna `Script` te indica el tipo de alfabeto para el que se ha desarrollado el modelo, por lo general, es `Latin`. En la columna `Size` puedes ver el tamaño del modelo en MB. La columna `Accuracy` te indica la precisión del modelo. Cuanto más alta sea, mejor será el modelo. La columna `Right` indica si el modelo es público o privado. Por ahora solo verás modelos públicos, que son los que ofrecemos desde la Universidad de Valladolid. Los privados son aquellos que has subido tú con el botón `Upload a model` que hay en la parte superior derecha. Si haces clic en el icono de descarga (verde con una hoja y una flecha que apunta hacia abajo), podrás descargar el modelo a tu ordenador.
+
+Haz clic en `My Projects`. Como en el capítulo anterior creaste el proyecto `Primer documento` haz clic sobre él. Habrá cambiado el aspecto de la página. 
+
+```{r segmentacion_02, echo=F, fig.cap="Contenido del proyecto `Primer documento`", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_026.png?raw=true")
+```
+
+Te muestra todos los documentos que constituyen el proyecto `Primer documento`. Solo puede haber uno (salvo y has estado enredando 😉 en el proyecto). Te muestra una mininatura del documento, el nombre del documento, quién lo ha subido (en grupos de trabajo puede haber varios propietarios), la fecha de la última modificación, el número de imágenes que tiene y tres iconos. Uno azul para las etiquetas que le quieras añadir (por el momentos no es útil), y otros dos bajo el marbete `Actions`. El primero es para editar el documento, el segundo para eliminarlo (¡Cuidado con este!). Si situas el ratón sobre el nombre o sobre la miniatura y haces clic, se abrirá el documento.
+
+Habrás vuelto a una pantalla que ya conoces del capítulo anterior, en el que subiste el documento. Es hora de segmentarlo. Para ello, haz clic en el botón `Select all` que hay en la parte superior izquierda.
+
+```{r segmentacion_03, echo=F, fig.cap="Todas las imágenes seleccionadas", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_027.png?raw=true")
+```
+
+Todas las miniaturas cambiarán el marco y será negro y que La la derecha los botones `Select all` y `Unselect all` dice `Selected 4/4`. Ahora haz clic en el botón azul que dice `Segment`. Se encuentra debajo de la caja de carga de las imágenes, en la parte derecha. Al hacer clic, se abrirá el diálogo para seleccionar el modelo.
+
+```{r segmentacion_04, echo=F, fig.cap="Diálogo de segmentación", message=FALSE, warning=FALSE, out.width='40%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_022.png?raw=true")
+```
+
+Por defecto ofrece el modelo `default (blla.model)`. Si abres el desplegable, verás que te hay varios modelos, que coinciden con los que viste al pulsar en la pestaña `My models`. Son `baselines` y `lineas_v6` que solo trazarían las líneas en las que vea texto. `regions` y `areas_v2` buscarían las zonas (regiones) del texto. Por el momento, vas a quedarte con el que ofrece como `default`, que lo encontrarás en cualquier instancia de *eScriptorium*. Y funciona realmente bien, aunque siempre hay sus más y sus menos.
+
+```{r segmentacion_05, echo=F, fig.cap="Diálogo de segmentación", message=FALSE, warning=FALSE, out.width='40%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_028.png?raw=true")
+```
+
+Los otros dos deplegables permiten decidir si quieres que el modelo detecte las líneas de texto o las regiones de texto. En este caso, vamos a dejarlo como está: que localice regiones y líneas automáticamente.
+
+El tercer desplegable es para indicarle en qué dirección va el texto. En este caso, como es un texto con alfabeto latino y que está escrito de izquierda a derecha y que se ha de leer de arriba abajo, lo dejarás como está.
+
+Por último hay una casilla que está marcada por defecto que dice `Override`. Esto significa que las imágenes o algunas de ellas ya están segmentadas, las volvería a segmentar y borraría todo lo anterior (transcripciones incluidas). Si no la marcas, solo segmentará las imágenes que no estén segmentadas. En este caso, como es la primera vez que lo haces, lo dejaremos marcado. Pero en el futuro ten cuidado, pues borraría todo lo que tuvieras hecho.
+
+Haz clic en el botón `Segment` que hay en la parte inferior derecha. Desaparecerá el diálogo y verás que en los miniaturas ha aparecido una banda amarillenta que parpadea con un signo de prohibido. Esto es porque el modelo está trabajando. Puede servir para detener el proceso si ves que no está funcionando como esperabas. Pero no lo hagas, porque lo que has hecho es correcto y el modelo está trabajando.
+
+```{r segmentacion_06, echo=F, fig.cap="Indicación de que está trabajando", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_029.png?raw=true")
+```
+
+Esto puede tardar un poco, depende del número de imágenes y del tamaño de las mismas. Pasado un rato (variable), verás que las miniaturas han cambiado. Ahora tienen en la parte inferior izquierda cuatro rayitas verdes que indican que el modelo ha segmentado la imagen. Y en la parte superior habrá aparecido un cartel de color verde que indicará que ha concluido la segmentación. Deberá decir `Segmentation done! (n)` en donde `n` indica el número de imágenes y debe ser el mismo que el de imágenes seleccionadas. En nuestro caso `4`.
+
+```{r segmentacion_07, echo=F, fig.cap="Segmentación finalizada", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_030.png?raw=true")
+```
+
+Si haces clic en una de las miniaturas, se abrirá la imagen y podrás ver cómo ha segmentado el texto. Si lo haces con la pestaña `Edit` abrirá la primera. Haz clic en `Edit`.
+
+```{r segmentacion_08, echo=F, fig.cap="El editor de eScriptorium", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_031.png?raw=true")
+```
+
+El resultado parace satisfactorio. Ha marcado correctamente la caja y las líneas y ha ignorado el recuadro de la inicial decorada. Es un dibujo de donde no puede extraer texto, aunque en su interior haya una `D`.
+
+Sin embargo, no todo lo que ha marcado interesa. Verás que en la parte superior hay dos líneas que marcan texto manuscrito. Puede que te interese, aunque lo más probable es que no. este es un pequeño problema que hay que solucionar.
+
+Si te fijas, al final de la página hay una `a` que no ha tenido en cuenta. Se trata de la signatura tipográfica del impreso. Quizá te interese, o quizá no. A mí me interesa porque ya que es información que a otros les puede venir bien. hay que marcarlo manualmente, como el borrar las líneas que hay en la parte suprior de la página.
+
+Antes de hacerlo, recórrete todas las páginas. Para ello usa el signo `＞` que hay en la parte superior derecha. Si haces clic, irás a la siguiente página. Si mantienes pulsado, irás avanzando rápidamente por todas las páginas del documento. Recorre todas las páginas y comprueba que el modelo ha segmentado correctamente el texto. Para retroceder usa el signo `＜` que hay a la izquierda del anterior. Si mantienes pulsado, irás retrocediendo rápidamente por todas las páginas del documento.
+
+Verás que todas las páginas tienen algún problemilla debido a las notas manuscritas de unos lectores y no interesan. *eScriptorium* tiene herramientas para solucionarlo. Vamos a ello.
+
+## Herramientas de edición
+
+
+
+En la parte superior verás que hay una barra (debajo de la franja negra) con varios botones. El primero, una flecha que apunta hacia la izquierda, es para volver a la página de `My Projects`.
+
+
+
+
+
 
 
 
