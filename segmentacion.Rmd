@@ -84,15 +84,21 @@ Si te fijas, al final de la página hay una `a` que no ha tenido en cuenta. Se t
 
 Antes de hacerlo, recórrete todas las páginas. Para ello usa el signo `＞` que hay en la parte superior derecha. Si haces clic, irás a la siguiente página. Si mantienes pulsado, irás avanzando rápidamente por todas las páginas del documento. Recorre todas las páginas y comprueba que el modelo ha segmentado correctamente el texto. Para retroceder usa el signo `＜` que hay a la izquierda del anterior. Si mantienes pulsado, irás retrocediendo rápidamente por todas las páginas del documento.
 
-<img src="imagenes/eS_UVa_031a.gif" width="85%" style="display:block; margin:auto;">
-
 Verás que todas las páginas tienen algún problemilla debido a las notas manuscritas de unos lectores y no interesan. *eScriptorium* tiene herramientas para solucionarlo. Vamos a ello.
 
 ## Herramientas de edición
 
 En la parte superior verás que hay una barra (debajo de la franja negra) con varios botones. El primero, una flecha que apunta hacia la izquierda, es para volver a la página de `My Projects`.
 
+```{r segmentacion_09, echo=F, fig.cap="Menú principal del editor", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_032.png?raw=true")
+```
 
+La imagen anterior muestra el menún principal dentro del editor de *eScriptorium*. Algunos elementos los encontraras en varias partes de la interfaz. Por ejemplo, el botón `Description`, `Ontology`, `Images`, `Edit` y `Reports` los tienes también cuando tienes activo cualquier documento. El bloque dela derecha es el más importante en esta barra principal, pues solo aparecen cuando estás dentro del editor. Vamos a ir de izquierda a derecha.
+
+```{r segmentacion_10, echo=F, fig.cap="Bloque principal del editor", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_033.png?raw=true")
+```
 
 
 
