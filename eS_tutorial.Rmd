@@ -18,33 +18,35 @@ Si tienes una cuenta activa en la instancia `eScriptorium` de la Universidad de 
 
 Aparecerá una pantalla de inicio de sesión donde deberás introducir tu usuario y contraseña.
 
-```{r es_uva01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_001.png?raw=true")
 ``` 
-Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte superior de la página o en el botón más pequeño que hay en la parte inferior de la barra blanca de la izquierda. Cuando hayas hecho clic en cualquiera de los dos, aparecerá las casillas para que introduzcas tu usuario y contraseña.
 
-```{r es_uva03, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+Para introducirlo, puedes hacer clic en botón `Sign in` que hay en la parte superior de la página o en el botón más pequeño que hay en la parte inferior de la barra blanca de la izquierda. Cuando hayas hecho clic en cualquiera de los dos, aparecerán las casillas para que introduzcas tu usuario y contraseña.
+
+```{r es_uva03, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_003.png?raw=true")
 ``` 
 
 Una vez introducidos los datos, pulsa el botón `login` y accederás a la página principal de `eScriptorium` (lo reducimos a la abreviatura `eS`).
 
-```{r es_uva04, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva04, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_004.png?raw=true")
 ``` 
+
 Así es como aparece la primera vez que entras. Así que vamos a dar un pequeño paseo. Abajo a la izquierda, en la barra blanca, tienes un menú con varias opciones. La primera es `Home`, que te lleva a la página principal. La segunda es `Projects`, donde puedes ver los proyectos en los que estás trabajando. La tercera es `Models`, donde puedes ver los modelos de transcripción y segmentación a los que tienes acceso. La cuarta es `Task`, donde puedes ver qué tareas y procesos está realizando tu cuenta en `eS`.
 
 La página `Home` es casi idéntica a la de página en la que pulsate en `Sign in`, solo que en la barra lateral izquierda tienes todos elementos básicos de navegación.
 
 Pulsa sobre `Profile`.
 
-```{r es_uva05, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='10%', fig.align="center"}
+```{r es_uva05, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_005.png?raw=true")
 ``` 
 
-Se abrirá una ventanita con tres posibilidades. haz clic en la que dice `Profile Settings`. Aparecerá una página con tu perfil, donde podrás ver tu correo electrónico las demás casillas están vacías. Rellana la de tu nombre y apellidos. Si no lo haces, para la máquina serás el nombre del usuario que has introducido al entrar.
+Se abrirá una ventanita con tres posibilidades. haz clic en la que dice `Profile Settings`. Aparecerá una página con tu perfil, donde podrás ver tu correo electrónico mientras que las demás casillas estarán vacías. Rellana la de tu nombre y apellidos. Si no lo haces, para la máquina serás el nombre del usuario que has introducido al entrar.
 
-```{r es_uva06, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva06, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_006.png?raw=true")
 ``` 
 
@@ -52,13 +54,13 @@ Si haces clic en la casilla `Legacy mode` aparecerá un aspecto diferente de la 
 
 El aspecto de la página habrá cambiado y el menú ya no estára en el margen izquierdo, sino en la barra superior, en una franja de color negro.
 
-```{r es_uva07, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva07, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_007.png?raw=true")
 ``` 
 
-Si pulsas sobre `API` key aparecerá una ventana con un código. Este código es importante, ya que te permitirá acceder a la API de `eS` y realizar tareas automatizadas. Por el momento no lo vas a utilizar, es para usuarios avanzados, y estamos dando los primeros pasos.
+Si pulsas sobre `API key` aparecerá una ventana con un código. Este código es importante, ya que te permitirá acceder a la API de `eS` y realizar tareas automatizadas. Por el momento no lo vas a utilizar, es para usuarios avanzados, y estás dando los primeros pasos.
 
-En `Files` encontrarás la lista de los ficheros que has pedido a `eS` que descargue. Ahora estará vacío, ya que no has le has pedido que descargue ninguno.
+En `Files` encontrarás la lista de los ficheros que has pedido a `eS` que descargue. Por ahora debería estar vacío, ya que no has le has pedido que descargue ninguno.
 
 En `Teams` podrás ver los equipos a los que perteneces. Si no perteneces a ninguno, aparecerá vacío. Pero puedes crear uno nuevo. Solo tienes que darle un nombre y hacer clic en `Create`. Por el momento, no hagas nada.
 
@@ -67,7 +69,7 @@ Por último, tiene `Invitations`, donde podrás ver las invitaciones que has env
 En la nueva visión de `eS`, la barra negra de arriba tiene un menú desplegable que te permite acceder a las diferentes secciones de la plataforma. En la parte derecha, tienes tu nombre de usuario y un botón para abrir el desplegable que antes tenías abajo a la izquierda.
 
 
-```{r es_uva08, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='10%', fig.align="center"}
+```{r es_uva08, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_008.png?raw=true")
 ``` 
 
@@ -78,44 +80,44 @@ Un botón importante del menú desplegabla, es el de salida, `Logout`. Cuando qu
 
 ## Mi primer proyecto
 
-Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. Un proyecto en `eS` es un conjunto de documentos que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en `My Projects` en la barra negra superior y a continuación haz clic en el botón verde de la derecha que dice `Create new Project`.
+Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. En `eS` un proyecto es un conjunto de documentos que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en `My Projects` en la barra negra superior y a continuación haz clic en el botón verde de la derecha que dice `Create new Project`.
 
-Aparecerá una ventana donde podrás introducir el nombre del proyecto y una descripción del mismo. Generalmente será el manual de trasncripción que see usará. Puede ser una URL a un documento externo.
+Aparecerá una ventana donde podrás introducir el nombre del proyecto y una descripción del mismo. Generalmente será el manual de trasncripción que se usará. Puede ser una URL a un documento externo.
 
-```{r es_uva09, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva09, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_009.png?raw=true")
 ``` 
 
 Para este tutorial, vamos a crear un proyecto llamado `Primer documento`. Introduce el nombre y la descripción (si lo crees necesario) y haz clic en `Create`. tan pronto como lo hagas, aparecerá una ventana con el proyecto que acabas de crear. Si no aparece, haz clic en `My Projects` y verás el proyecto que acabas de crear.
 
-```{r es_uva10, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva10, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_010.png?raw=true")
 ```
 
-Fíjate que dice `Primer documento` el nombre del usuario que lo ha creado, en este caso `7PartidasDigital` y por último dice que hay 0 documentos.
+Fíjate que dice `Primer documento` el nombre del usuario que lo ha creado, en este caso `7PartidasDigital` y por último dice que hay `0` documentos.
 
-Un proyecto puede tener varios documentos, pero por el momento solo vamos a crear uno. Para ello, haz clic en el nombre del proyecto y aparecerá una página con la información del proyecto.
+Un proyecto puede tener varios documentos, pero por el momento solo vas a crear uno. Para ello, haz clic en el nombre del proyecto y aparecerá una página con la información del proyecto.
 
-```{r es_uva11, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva11, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_011.png?raw=true")
 ```
 
 Está totalmente vacío. En la parte superior, verás un botón verde que dice `Create new Document`. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del doumento.
 
-```{r es_uva12, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva12, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012.png?raw=true")
 ```
 Lo primero es darle un nombre la documento. En este caso, vamos a llamarlo `INCUNABLE_01`. En la casilla con guiones abre el desplegable y selecciona `Latin`. Esto se refiere al tipo de alfabeto que va a usar en tu documento. Deja las demás casillas como están. Y haz clic en `Create`.
 
 A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastras las desde la carpeta en que las tengas y soltarlas en la ventanao hacer clic para que navegers por el sistema de carpetas de tu ordenador hasta localizarlas.
 
-```{r es_uva13, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva13, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013.png?raw=true")
 ```
 
 Si las tienes en `pdf` tienes que hacer clic en `Import` y seleccionar `Images (PDF)`. Como puedes ver, también puedes importar imágenes desde `IIIF`, que es un protocolo para compartir imágenes de alta calidad. Si tienes un enlace a una imagen en `IIIF`, puedes pegarlo aquí y `eS` lo descargará automáticamente e incluso subir transcripciones, pero esto ya es un poco más complejo.
 
-```{r es_uva14, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva14, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_014.png?raw=true")
 ```
 
@@ -127,7 +129,7 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes. Mientras suben las imágenes, el botón `Import` parpaderá y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice.
 
-```{r es_uva16, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%', fig.align="center"}
+```{r es_uva16, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_016.png?raw=true")
 ```
 
