@@ -1,0 +1,31 @@
+---
+title: "Segmentacion"
+author:
+- "José Manuel Fradejas Rueda"
+- "Filología Digital UVa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<div>
+<center>
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
+</center>
+</div>
+
+# Manual de eScriptorium
+## Segmentación
+
+La segmentación es es proceso básico para poder llevar a cabo la transcripción de cualquier texto que tengamos en una imagen. En esta fase se le pide que localice la regiones de texto que hay dentro de la imagen y las líneas que lo constituye. Para ello, `eS` emplea un modelo de segmentación que se ha entrenado previamente con un conjunto de datos. Este modelo es capaz de detectar las regiones de texto y las líneas de forma automática. Pero no es el único que puedes usar. Puedes crear tu propio modelo de segmentación o usar uno ya existente. Para ello, haz clic en el botón `Models` que hay en la barra negra superior.
+
+Se abrirá una nueva página donde podrás ver los modelos de segmentación que tienes disponibles. Son los que los usuarios del grupo de `Filología Digital` de la Universidad hemos creado (INCUANBLES_HSMS_v3_1.2_best) u otros que hemos localizado en la red y que son públicos como CatMus_Medieval-160. Los que hay disponibles ahora mismo son suficientes para este manual.
+
+```{r segmentacion_01, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
+``` 
+
+Si te fijas en la segunda columna, verás que en unos casos dice `Recognize` y en otros `Segment`. Esto es porque algunos modelos están preparados para reconocer el texto y otros solo para segmentarlo. La columna `Script` te indica el tipo de alfabeto para el que se ha desarrollado el modelo, por lo general, es `Latin`. En la columna `Size` puedes ver el tamaño del modelo en MB. La columna `Accuracy` te indica la precisión del modelo. Cuanto más alta sea, mejor será el modelo. La columna `Right` indica si el modelo es público o privado. Por ahora solo verás modelos públicos, que son los que ofrecemos desde la Universidad de Valladolid. Los privados son aquellos que has subido tú con el botón `Upload a model` que hay en la parte superior derecha. Si haces clic en el icono de descarga (verde con una hoja y una flecha que apunta hacia abajo), podrás descargar el modelo a tu ordenador.
+
+
+
+

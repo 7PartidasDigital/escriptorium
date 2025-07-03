@@ -1,0 +1,22 @@
+---
+title: "Manual eScriptorium: Preliminares"
+author:
+- "José Manuel Fradejas Rueda"
+- "Filología Digital UVa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<div>
+<center>
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
+</center>
+</div>
+
+# Manual de eScriptorium
+## Preliminares
+
+```{r es_uva08, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_008.png?raw=true")
+``` 
+
