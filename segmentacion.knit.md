@@ -3,7 +3,7 @@ title: "Segmentacion"
 author:
 - "José Manuel Fradejas Rueda"
 - "Filología Digital UVa"
-date: "`r Sys.Date()`"
+date: "2025-07-03"
 output: html_document
 ---
 
@@ -20,37 +20,42 @@ La segmentación es es proceso básico para poder llevar a cabo la transcripció
 
 Se abrirá una nueva página donde podrás ver los modelos de segmentación que tienes disponibles. Son los que los usuarios del grupo de `Filología Digital` de la Universidad hemos creado (INCUANBLES_HSMS_v3_1.2_best) u otros que hemos localizado en la red y que son públicos como CatMus_Medieval-160. Los que hay disponibles ahora mismo son suficientes para este manual.
 
-```{r segmentacion_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
-``` 
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true" alt="Modelos disponibles por defecto" width="85%" />
+<p class="caption">Modelos disponibles por defecto</p>
+</div>
 
 Si te fijas en la segunda columna, verás que en unos casos dice `Recognize` y en otros `Segment`. Esto es porque algunos modelos están preparados para reconocer el texto y otros solo para segmentarlo. La columna `Script` te indica el tipo de alfabeto para el que se ha desarrollado el modelo, por lo general, es `Latin`. En la columna `Size` puedes ver el tamaño del modelo en MB. La columna `Accuracy` te indica la precisión del modelo. Cuanto más alta sea, mejor será el modelo. La columna `Right` indica si el modelo es público o privado. Por ahora solo verás modelos públicos, que son los que ofrecemos desde la Universidad de Valladolid. Los privados son aquellos que has subido tú con el botón `Upload a model` que hay en la parte superior derecha. Si haces clic en el icono de descarga (verde con una hoja y una flecha que apunta hacia abajo), podrás descargar el modelo a tu ordenador.
 
 Haz clic en `My Projects`. Como en el capítulo anterior creaste el proyecto `Primer documento` haz clic sobre él. Habrá cambiado el aspecto de la página. 
 
-```{r segmentacion_02, echo=F, fig.cap="Contenido del proyecto `Primer documento`", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_026.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_026.png?raw=true" alt="Contenido del proyecto `Primer documento`" width="85%" />
+<p class="caption">Contenido del proyecto `Primer documento`</p>
+</div>
 
 Te muestra todos los documentos que constituyen el proyecto `Primer documento`. Solo puede haber uno (salvo y has estado enredando 😉 en el proyecto). Te muestra una mininatura del documento, el nombre del documento, quién lo ha subido (en grupos de trabajo puede haber varios propietarios), la fecha de la última modificación, el número de imágenes que tiene y tres iconos. Uno azul para las etiquetas que le quieras añadir (por el momentos no es útil), y otros dos bajo el marbete `Actions`. El primero es para editar el documento, el segundo para eliminarlo (¡Cuidado con este!). Si situas el ratón sobre el nombre o sobre la miniatura y haces clic, se abrirá el documento.
 
 Habrás vuelto a una pantalla que ya conoces del capítulo anterior, en el que subiste el documento. Es hora de segmentarlo. Para ello, haz clic en el botón `Select all` que hay en la parte superior izquierda.
 
-```{r segmentacion_03, echo=F, fig.cap="Todas las imágenes seleccionadas", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_027.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_027.png?raw=true" alt="Todas las imágenes seleccionadas" width="85%" />
+<p class="caption">Todas las imágenes seleccionadas</p>
+</div>
 
 Todas las miniaturas cambiarán el marco y será negro y que La la derecha los botones `Select all` y `Unselect all` dice `Selected 4/4`. Ahora haz clic en el botón azul que dice `Segment`. Se encuentra debajo de la caja de carga de las imágenes, en la parte derecha. Al hacer clic, se abrirá el diálogo para seleccionar el modelo.
 
-```{r segmentacion_04, echo=F, fig.cap="Diálogo de segmentación", message=FALSE, warning=FALSE, out.width='40%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_022.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_022.png?raw=true" alt="Diálogo de segmentación" width="40%" />
+<p class="caption">Diálogo de segmentación</p>
+</div>
 
 Por defecto ofrece el modelo `default (blla.model)`. Si abres el desplegable, verás que te hay varios modelos, que coinciden con los que viste al pulsar en la pestaña `My models`. Son `baselines` y `lineas_v6` que solo trazarían las líneas en las que vea texto. `regions` y `areas_v2` buscarían las zonas (regiones) del texto. Por el momento, vas a quedarte con el que ofrece como `default`, que lo encontrarás en cualquier instancia de *eScriptorium*. Y funciona realmente bien, aunque siempre hay sus más y sus menos.
 
-```{r segmentacion_05, echo=F, fig.cap="Diálogo de segmentación", message=FALSE, warning=FALSE, out.width='40%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_028.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_028.png?raw=true" alt="Diálogo de segmentación" width="40%" />
+<p class="caption">Diálogo de segmentación</p>
+</div>
 
 Los otros dos deplegables permiten decidir si quieres que el modelo detecte las líneas de texto o las regiones de texto. En este caso, vamos a dejarlo como está: que localice regiones y líneas automáticamente.
 
@@ -60,21 +65,24 @@ Por último hay una casilla que está marcada por defecto que dice `Override`. E
 
 Haz clic en el botón `Segment` que hay en la parte inferior derecha. Desaparecerá el diálogo y verás que en los miniaturas ha aparecido una banda amarillenta que parpadea con un signo de prohibido. Esto es porque el modelo está trabajando. Puede servir para detener el proceso si ves que no está funcionando como esperabas. Pero no lo hagas, porque lo que has hecho es correcto y el modelo está trabajando.
 
-```{r segmentacion_06, echo=F, fig.cap="Indicación de que está trabajando", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_029.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_029.png?raw=true" alt="Indicación de que está trabajando" width="20%" />
+<p class="caption">Indicación de que está trabajando</p>
+</div>
 
 Esto puede tardar un poco, depende del número de imágenes y del tamaño de las mismas. Pasado un rato (variable), verás que las miniaturas han cambiado. Ahora tienen en la parte inferior izquierda cuatro rayitas verdes que indican que el modelo ha segmentado la imagen. Y en la parte superior habrá aparecido un cartel de color verde que indicará que ha concluido la segmentación. Deberá decir `Segmentation done! (n)` en donde `n` indica el número de imágenes y debe ser el mismo que el de imágenes seleccionadas. En nuestro caso `4`.
 
-```{r segmentacion_07, echo=F, fig.cap="Segmentación finalizada", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_030.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_030.png?raw=true" alt="Segmentación finalizada" width="85%" />
+<p class="caption">Segmentación finalizada</p>
+</div>
 
 Si haces clic en una de las miniaturas, se abrirá la imagen y podrás ver cómo ha segmentado el texto. Si lo haces con la pestaña `Edit` abrirá la primera. Haz clic en `Edit`.
 
-```{r segmentacion_08, echo=F, fig.cap="El editor de eScriptorium", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_031.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_031.png?raw=true" alt="El editor de eScriptorium" width="85%" />
+<p class="caption">El editor de eScriptorium</p>
+</div>
 
 El resultado parace satisfactorio. Ha marcado correctamente la caja y las líneas y ha ignorado el recuadro de la inicial decorada. Es un dibujo de donde no puede extraer texto, aunque en su interior haya una `D`.
 
@@ -90,15 +98,17 @@ Verás que todas las páginas tienen algún problemilla debido a las notas manus
 
 En la parte superior verás que hay una barra (debajo de la franja negra) con varios botones. El primero, una flecha que apunta hacia la izquierda, es para volver a la página de `My Projects`.
 
-```{r segmentacion_09, echo=F, fig.cap="Menú principal del editor", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_032.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_032.png?raw=true" alt="Menú principal del editor" width="85%" />
+<p class="caption">Menú principal del editor</p>
+</div>
 
 La imagen anterior muestra el menún principal dentro del editor de *eScriptorium*. Algunos elementos los encontraras en varias partes de la interfaz. Por ejemplo, el botón `Description`, `Ontology`, `Images`, `Edit` y `Reports` los tienes también cuando tienes activo cualquier documento. El bloque dela derecha es el más importante en esta barra principal, pues solo aparecen cuando estás dentro del editor. Vamos a ir de izquierda a derecha.
 
-```{r segmentacion_10, echo=F, fig.cap="Bloque principal del editor", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_033.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_033.png?raw=true" alt="Bloque principal del editor" width="50%" />
+<p class="caption">Bloque principal del editor</p>
+</div>
 
 Lo que tienes que estar viendo es la imagen de la página que estás editando y verás que hay dos botones en azul, mientras que los otros tres están en gris. 
 
@@ -115,9 +125,10 @@ El último, a la derecha del todo, tiene tres líneas numeradas. Este botón per
 
 Si activas todos estos botones (salvo de de metadatos), verás que la imagen se queda como en la siguiente imagen:
 
-```{r segmentacion_11, echo=F, fig.cap="Todas las ventanas del editor activadas", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_034.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_034.png?raw=true" alt="Todas las ventanas del editor activadas" width="50%" />
+<p class="caption">Todas las ventanas del editor activadas</p>
+</div>
 
 Si te fijas, encima de cada una de las ventanas que se han abierto al pulsar los botones, tienen en la parte superior el mismo icono que el botón correspondiente (el ojo, las rayitas, la `A` y signo japonés, y las líneas numeradas) y, a su derecha una serie de botones que permiten acceder a cada una de las posibles funciones de cada una de las ventanas.
 
@@ -138,9 +149,10 @@ Verás que encima de la imagen hay otros tres botones. El primero, con una flech
 
 Con el botón central reduce la imagen para que la veas entera en el navegador. Verás que hay una serie de botones.
 
-```{r segmentacion_12, echo=F, fig.cap="Botones del menú de segmentación", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_035.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_035.png?raw=true" alt="Botones del menú de segmentación" width="50%" />
+<p class="caption">Botones del menú de segmentación</p>
+</div>
 
 El primero, el de la flecha hacia la izquierda, es dehacer algo que se acaba de hacer. Es lo mismo que control (cmd) `Z`. El segundo, el de la flecha hacia la derecha, es rehacer algo que se ha deshecho. Es lo mismo que control (cmd) `Y`.
 
@@ -154,15 +166,17 @@ Los importantes son los siguientes, y son los que permite editar la segmentació
 
 El editor de regiones se activa con el botón que tiene cuatro cadraditos dentro. Si lo pulsas, verás que se coloren las regiones que detectó la segmentación. También lo puedes activar pulando la `R` del teclado. Si lo pulsas de nuevo, se desactivará.
 
-```{r segmentacion_13, echo=F, fig.cap="Edición de región activado", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_036.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_036.png?raw=true" alt="Edición de región activado" width="50%" />
+<p class="caption">Edición de región activado</p>
+</div>
 
 Una vez activada la edición de regiones, si haces clic dentro de cualquiera de ellas, verás que se encienden unos puntos blancos y, además, en el margen izquierdo aparecerá dos nuevos botones. Uno con una `T` y una flecha de dos puntas a su lado y otro una papelera con fondo rojo.
 
 Activa las regiones, y haz clic en la pequeña región que hay en la parte superior, pues la vas a borrar. Al hacer clic sobre esa zona, el perímetro de la región se llenará de cuadraditos blancos. Son los puntos que delimitan la región.
 
-```{r segmentacion_14, echo=F, fig.cap="Edición de región activado", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_037.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_037.png?raw=true" alt="Edición de región activado" width="50%" />
+<p class="caption">Edición de región activado</p>
+</div>
 
