@@ -109,19 +109,19 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 ```
 Lo primero es darle un nombre la documento. En este caso, vamos a llamarlo `INCUNABLE_01`. En la casilla con guiones abre el desplegable y selecciona `Latin`. Esto se refiere al tipo de alfabeto que va a usar en tu documento. Deja las demás casillas como están. Y haz clic en `Create`.
 
-A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastras las desde la carpeta en que las tengas y soltarlas en la ventanao hacer clic para que navegers por el sistema de carpetas de tu ordenador hasta localizarlas.
+A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastras las desde la carpeta en que las tengas y soltarlas en la ventana, o hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.
 
 ```{r es_uva13, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013.png?raw=true")
 ```
 
-Si las tienes en `pdf` tienes que hacer clic en `Import` y seleccionar `Images (PDF)`. Como puedes ver, también puedes importar imágenes desde `IIIF`, que es un protocolo para compartir imágenes de alta calidad. Si tienes un enlace a una imagen en `IIIF`, puedes pegarlo aquí y `eS` lo descargará automáticamente e incluso subir transcripciones, pero esto ya es un poco más complejo.
+Si las tienes en `pdf` tienes que hacer clic en `Import` y seleccionar `Images (PDF)`. Como puedes ver, también puedes importar imágenes desde `IIIF`, que es un protocolo para compartir imágenes de alta calidad. Si tienes un enlace a una imagen en `IIIF`, puedes pegarlo aquí y `eS` lo incluirá en tu cuenta automáticamente. También puedes subir transcripciones ya hechas, pero esto ya es un poco más complejo y lo dejamos para otro capítulo.
 
 ```{r es_uva14, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_014.png?raw=true")
 ```
 
-Vamos a subir un pdf (lo tiene en esta dirección). Bájalo a tu ordenador, es más sencillo, y después lo subes a `eS`. Hac clic en `Images (PDF)` y se abrirá una ventana donde podrás seleccionar el archivo que quieres subir. Se abrirá una ventana del explorador de archivos de tu ordenador. Busca el archivo  que has descargado y selecciónalo. A continuación, haz clic en `Start importing`. 
+Vas a subir un pdf (pulsa aquí para acceder a él)[https://github.com/7PartidasDigital/escriptorium/blob/main/incunable_01/MULAS.pdf]. Bájalo a tu ordenador, es más sencillo, y después lo subes a `eS`. Hac clic en `Images (PDF)` y se abrirá una ventana donde podrás seleccionar el archivo que quieres subir. Se abrirá una ventana del explorador de archivos de tu ordenador. Busca el archivo  que has descargado y selecciónalo. A continuación, haz clic en `Start importing`. 
 
 ```{r es_uva15, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_015.png?raw=true")
