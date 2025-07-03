@@ -1,6 +1,8 @@
 ---
-title: "Manual eScriptorium"
-author: "Filología Digital UVa"
+title: "Manual eScriptorium: Primeros pasos"
+author:
+- "José Manuel Fradejas Rueda"
+- "Filología Digital UVa"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -12,6 +14,7 @@ output: html_document
 </div>
 
 # Manual de eScriptorium
+## Primeros pasos
 Este manual está pensado para ayudar a los usuarios a familiarizarse con el uso de eScriptorium, una herramienta de transcripción y edición de textos históricos. A través de este manual, se proporcionarán instrucciones detalladas sobre cómo utilizar las diferentes funcionalidades de la plataforma.
 
 Si tienes una cuenta activa en la instancia `eScriptorium` de la Universidad de Valladolid, puedes acceder a la plataforma con este enlace [http://escriptorium.eca-simm.uva.es/](http://escriptorium.eca-simm.uva.es/).
@@ -76,129 +79,3 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 Es importante que cambies la contraseña de tu cuenta. Para ello, haz clic en `Change password`. Aparecerá una ventana donde podrás introducir tu contraseña actual y la nueva. Introduce la nueva contraseña dos veces para confirmarla y haz clic en `Change my password`.
 
 Un botón importante del menú desplegabla, es el de salida, `Logout`. Cuando quieras salir de `eS`, haz clic en él y se cerrará la sesión.
-
-
-## Mi primer proyecto
-
-Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. En `eS` un proyecto es un conjunto de documentos que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en `My Projects` en la barra negra superior y a continuación haz clic en el botón verde de la derecha que dice `Create new Project`.
-
-Aparecerá una ventana donde podrás introducir el nombre del proyecto y una descripción del mismo. Generalmente será el manual de trasncripción que se usará. Puede ser una URL a un documento externo.
-
-```{r es_uva09, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_009.png?raw=true")
-``` 
-
-Para este tutorial, vamos a crear un proyecto llamado `Primer documento`. Introduce el nombre y la descripción (si lo crees necesario) y haz clic en `Create`. tan pronto como lo hagas, aparecerá una ventana con el proyecto que acabas de crear. Si no aparece, haz clic en `My Projects` y verás el proyecto que acabas de crear.
-
-```{r es_uva10, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_010.png?raw=true")
-```
-
-Fíjate que ahora aparece `Primer documento`, el nombre del usuario que lo ha creado, en este caso `7PartidasDigital`, y por último informa de que hay `0` documentos. Y, además, habrá aparecido en la parte superior izquierda un cartillo que dice `Project created successfully`. Esto significa que el proyecto se ha creado correctamente.
-
-Ahora ya tienes un proyecto creado. Puedes crear tantos proyectos como quieras, pero por el momento vamos a centrarnos en este.
-
-Un proyecto puede tener varios documentos, pero por el momento solo vas a crear uno. Para ello, haz clic en el nombre del proyecto y aparecerá una página con la información del proyecto.
-
-```{r es_uva11, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_011.png?raw=true")
-```
-
-En la parte superior, verás el nombre del proyecto, `Primer documento`, y a la derecha tres pestañas: `Documents`, `Edit` y `Reports`. Verás que la de `Documents` está activa. Aquí es donde podrás ver los documentos que has creado dentro del proyecto. Por el momento, no hay ninguno, ya que acabas de crear el proyecto.
-
-La pestaña `Edit` te permite editar la información del proyecto, como el nombre y la descripción. La pestaña `Reports` te permite ver los informes generados por `eS` sobre el proyecto, como el número de documentos, el número de imágenes, etc. Puedes echarles un vistazo, pero por el momento no es necesario porque no hay mucho que ver.
-
-## Crar nuevo documento
-
-Para crear un nuevo documento, haz clic en la pestaña `Documents`. Verás que está totalmente vacío. En la parte superior, verás un botón verde que dice `Create new Document`. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del doumento.
-
-```{r es_uva12, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012.png?raw=true")
-```
-
-Lo primero es darle un nombre la documento. En este caso, vamos a llamarlo `INCUNABLE_01`. En la casilla con guiones abre el desplegable y selecciona `Latin`. Esto se refiere al tipo de alfabeto que va a usar en tu documento. Deja las demás casillas como están. Y haz clic en `Create`.
-
-```{r es_uva12a, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012a.png?raw=true")
-```
-
-Si todo ha ido bien, aparecerá un mensaje que dice `Document created successfully` y que la banda verde ya no dice `Create` sino `Update`, por si quieres actualizar algún elemento de los metadatos del documento.
-
-Debajo de la banda negea superior, verás varias pestañas `Description`, que es donde estás; `Ontology`, que es donde puedes añadir información sobre el documento el tipo de segmentación (pero esto ya es una cosa avanzadísima); `Images`, que es donde subirás las imágenes del documento; y `Reports`, que es donde podrás ver los informes generados por `eS` sobre el documento. Hay otras dos `Edit` y `Models`que está ninactiva porque no funcionan en esta parte.
-
-A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastrarlas desde la carpeta en que las tengas y soltarlas en la ventana o, si lo prefieres, hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.
-
-```{r es_uva13, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013.png?raw=true")
-```
-
-Si las tienes en `pdf` tienes que hacer clic en `Import` y seleccionar `Images (PDF)`. Como puedes ver, también puedes importar imágenes desde `IIIF`, que es un protocolo para compartir imágenes de alta calidad. Si tienes un enlace a una imagen en `IIIF`, puedes pegarlo aquí y `eS` lo incluirá en tu cuenta automáticamente. También puedes subir transcripciones ya hechas, pero esto ya es un poco más complejo y lo dejamos para otro capítulo.
-
-```{r es_uva14, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_014.png?raw=true")
-```
-
-Vas a subir un pdf [pulsa aquí para acceder a él](https://github.com/7PartidasDigital/escriptorium/blob/main/incunable_01/MULAS.pdf). Accederás a una página de GitHub donde podrás ver el documento.
-
-```{r es_uva13a, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013a.png?raw=true")
-```
-
-Para descargarlo, haz clic en el botón `Download` que hay en la parte superior derecha de la página (no aparecerá la etiqueta `Download raw file` salvo que pases el cursor por encima del icono de descarga. Se descargará un archivo llamado `MULAS.pdf` (en teoría habrá ido a parar a tu carpeta de descargas; búscalo allí).
-
-```{r es_uva13b, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013b.png?raw=true")
-```
-
-Bájalo a tu ordenador, es más sencillo, y después lo subes a `eS`. Hac clic en `Images (PDF)` y se abrirá una ventana donde podrás seleccionar el archivo que quieres subir. Se abrirá una ventana del explorador de archivos de tu ordenador. Busca el archivo  que has descargado y selecciónalo. A continuación, haz clic en `Start importing`. 
-
-```{r es_uva15, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_015.png?raw=true")
-```
-
-Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes. Mientras suben las imágenes, el botón `Import` parpaderá y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice. (La imagen que tienes a continuación no corresponde al docuemento que estás cargando, sino a otro, para que puedas ver el contador de carga y el botón de parar.)
-
-```{r es_uva16, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_016.png?raw=true")
-```
-
-Tardará un poquito, pero al final aparecerá un mensaje que dice `Import done!`. Si no aparece, es que ha habido algún error. En ese caso, revisa el archivo que has subido y asegúrate de que es un PDF válido.
-
-```{r es_uva17, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_017.png?raw=true")
-```
-
-Ahora ya tienes las imágenes del documento subidas a `eS`.
-
-Veamos uan serie de detalles importantes dentro del recuadro de cada imagen.
-
-```{r es_uva18, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_018.png?raw=true")
-```
-
-Cada imagen tiene un número de imagen, que es el número de la página del documento al que corresponde. A la izquierda hay un cuadradito que permite seleccionar o deseleccionar una imagen. Si lo seleccionas, el marco de la imagen se tornará negro y no verás ninguno de los otros iconos. Lo mismo sucederá si haces clic en el botón `Select all`, entonces el marcar o desmarcar haciendo clic en esa casilla te da control sobre que imágenes quieres actuar.
-
-```{r es_uva19, echo=F, fig.cap="Imagen seleccionada. Cambia el color del marco", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_019.png?raw=true")
-```
-
-Seguimos con los iconos que ofrece la miniatura de cada imagen. La `x` de la derecha es para borrarla. Si haces clic en ella, se eliminará la imagen del documento. Ten cuidado, porque no podrás recuperarla una vez eliminada. Pero el sistema te pedirá que confirmes que quieres borrarla.
-
-```{r es_uva20, echo=F, fig.cap="Aviso para confirmar que se quiere borrar", message=FALSE, warning=FALSE, out.width='30%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_020.png?raw=true")
-```
-
-Dentro de la miniatura hay un pequeño rectángulo, de tono azul muy tenue, que tiene un cuadradito y un lápiz. Este permite acceder al editor de texto. Si sitúas el cursor sobre él, verás que se ilumina. Si haces clic en él, se abrirá una ventana donde podrás editar el texto de la imagen. Por el momento, no podrás hacer nada. La imagen que hay a continuación es un ejemplo de lo que verás si haces clic en el icono.
-
-```{r es_uva21, echo=F, fig.cap="Visión del editor", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_021.png?raw=true")
-```
-
-
-
-
-
-
-
-
-
