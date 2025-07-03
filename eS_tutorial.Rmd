@@ -182,9 +182,9 @@ Cada imagen tiene un número de imagen, que es el número de la página del docu
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_019.png?raw=true")
 ```
 
-Seguimos con los iconos que ofrece la miniatura de cada imagen. La `x` de la derecha es para borrarla. Si haces clic en él, se eliminará la imagen del documento. Ten cuidado, porque no podrás recuperarla una vez eliminada. Pero el sistemna te pedirá que confirmes que quieres borrarla.
+Seguimos con los iconos que ofrece la miniatura de cada imagen. La `x` de la derecha es para borrarla. Si haces clic en ella, se eliminará la imagen del documento. Ten cuidado, porque no podrás recuperarla una vez eliminada. Pero el sistema te pedirá que confirmes que quieres borrarla.
 
-```{r es_uva20, echo=F, fig.cap="Aviso parsa confirmar que se quiere borrar", message=FALSE, warning=FALSE, out.width='30%', fig.align="center"}
+```{r es_uva20, echo=F, fig.cap="Aviso para confirmar que se quiere borrar", message=FALSE, warning=FALSE, out.width='30%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_020.png?raw=true")
 ```
 
@@ -193,6 +193,7 @@ Dentro de la miniatura hay un pequeño rectángulo, de tono azul muy tenue, que 
 ```{r es_uva21, echo=F, fig.cap="Visión del editor", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_021.png?raw=true")
 ```
+
 
 
 
