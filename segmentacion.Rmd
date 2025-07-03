@@ -178,6 +178,10 @@ Tras mover los puntos, verás que la región se ha modificado. Si te has equivoc
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_038.png?raw=true")
 ```
 
+Has jugado con una región que no tenía mayor interés. Así que vuelve a hacer clic en su interior y pulsa la papelera. Desaparecerá la región.
 
-Aquí
+```{r segmentacion_16, echo=F, fig.cap="Modificar la forma de una región", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_039.png?raw=true")
+```
+
 
