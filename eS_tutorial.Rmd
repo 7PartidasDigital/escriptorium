@@ -121,7 +121,19 @@ Si las tienes en `pdf` tienes que hacer clic en `Import` y seleccionar `Images (
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_014.png?raw=true")
 ```
 
-Vas a subir un pdf (pulsa aquí para acceder a él)[https://github.com/7PartidasDigital/escriptorium/blob/main/incunable_01/MULAS.pdf]. Bájalo a tu ordenador, es más sencillo, y después lo subes a `eS`. Hac clic en `Images (PDF)` y se abrirá una ventana donde podrás seleccionar el archivo que quieres subir. Se abrirá una ventana del explorador de archivos de tu ordenador. Busca el archivo  que has descargado y selecciónalo. A continuación, haz clic en `Start importing`. 
+Vas a subir un pdf [pulsa aquí para acceder a él](https://github.com/7PartidasDigital/escriptorium/blob/main/incunable_01/MULAS.pdf). Accederás a una página de GitHub donde podrás ver el documento.
+
+```{r es_uva13a, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013a.png?raw=true")
+```
+
+Para descargarlo, haz clic en el botón `Download` que hay en la parte superior derecha de la página. Se descargará un archivo llamado `MULAS.pdf`.
+
+```{r es_uva13b, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013b.png?raw=true")
+```
+
+Bájalo a tu ordenador, es más sencillo, y después lo subes a `eS`. Hac clic en `Images (PDF)` y se abrirá una ventana donde podrás seleccionar el archivo que quieres subir. Se abrirá una ventana del explorador de archivos de tu ordenador. Busca el archivo  que has descargado y selecciónalo. A continuación, haz clic en `Start importing`. 
 
 ```{r es_uva15, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_015.png?raw=true")
