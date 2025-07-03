@@ -94,7 +94,9 @@ Para este tutorial, vamos a crear un proyecto llamado `Primer documento`. Introd
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_010.png?raw=true")
 ```
 
-Fíjate que dice `Primer documento` el nombre del usuario que lo ha creado, en este caso `7PartidasDigital` y por último dice que hay `0` documentos.
+Fíjate que ahora aparece `Primer documento`, el nombre del usuario que lo ha creado, en este caso `7PartidasDigital`, y por último informa de que hay `0` documentos. Y, además, habrá aparecido en la parte superior izquierda un cartillo que dice `Project created successfully`. Esto significa que el proyecto se ha creado correctamente.
+
+Ahora ya tienes un proyecto creado. Puedes crear tantos proyectos como quieras, pero por el momento vamos a centrarnos en este.
 
 Un proyecto puede tener varios documentos, pero por el momento solo vas a crear uno. Para ello, haz clic en el nombre del proyecto y aparecerá una página con la información del proyecto.
 
@@ -102,12 +104,26 @@ Un proyecto puede tener varios documentos, pero por el momento solo vas a crear 
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_011.png?raw=true")
 ```
 
-Está totalmente vacío. En la parte superior, verás un botón verde que dice `Create new Document`. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del doumento.
+En la parte superior, verás el nombre del proyecto, `Primer documento`, y a la derecha tres pestañas: `Documents`, `Edit` y `Reports`. Verás que la de `Documents` está activa. Aquí es donde podrás ver los documentos que has creado dentro del proyecto. Por el momento, no hay ninguno, ya que acabas de crear el proyecto.
+
+La pestaña `Edit` te permite editar la información del proyecto, como el nombre y la descripción. La pestaña `Reports` te permite ver los informes generados por `eS` sobre el proyecto, como el número de documentos, el número de imágenes, etc. Puedes echarles un vistazo, pero por el momento no es necesario porque no hay mucho que ver.
+
+## Crar nuevo documento
+
+Para crear un nuevo documento, haz clic en la pestaña `Documents`. Verás que está totalmente vacío. En la parte superior, verás un botón verde que dice `Create new Document`. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del doumento.
 
 ```{r es_uva12, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012.png?raw=true")
 ```
+
 Lo primero es darle un nombre la documento. En este caso, vamos a llamarlo `INCUNABLE_01`. En la casilla con guiones abre el desplegable y selecciona `Latin`. Esto se refiere al tipo de alfabeto que va a usar en tu documento. Deja las demás casillas como están. Y haz clic en `Create`.
+
+```{r es_uva12a, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012a.png?raw=true")
+```
+
+
+Si todo ha ido bien, aparecerá un mensaje que dice `Document created successfully` y verás el documento que acabas de crear en la lista de documentos del proyecto.
 
 A continuación haz clic en `Images`. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en `jpg`, `png` o `tiff` solo tienes que arrastras las desde la carpeta en que las tengas y soltarlas en la ventana, o hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.
 
