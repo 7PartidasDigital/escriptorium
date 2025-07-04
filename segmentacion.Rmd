@@ -136,7 +136,7 @@ Verás que encima de la imagen hay otros tres botones. El primero, con una flech
 
 ## Editar la segmentación
 
-Con el botón central reduce la imagen para que la veas entera en el navegador. Verás que hay una serie de botones.
+Con el botón central reduce la imagen para que la puedas ver entera en el navegador. Verás que hay una serie de botones.
 
 ```{r segmentacion_12, echo=F, fig.cap="Botones del menú de segmentación", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_035.png?raw=true")
@@ -148,7 +148,7 @@ El tercero, tiene unos engranajes, permite acceder al editor de segmentación, a
 
 El cuarto, el del círculo divido en dos, permite convertir la imagen a dos colores (binarizar). No lo he usado nunca.
 
-Los importantes son los siguientes, y son los que permite editar la segmentación.
+Los importantes son los siguientes que son los que permite editar la segmentación.
 
 ## Editar las regiones
 
@@ -183,5 +183,56 @@ Has jugado con una región que no tenía mayor interés. Así que vuelve a hacer
 ```{r segmentacion_16, echo=F, fig.cap="Región borrada", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_039.png?raw=true")
 ```
+
+## Crear una región
+
+A veces te verás en la necesidad de crear una región nueva, ya sea porque el modelo no la ha detectado o porque quieres añadir una nueva. Para esta prueba, vas a dibujar la que acabas de borrar.
+
+Activa el modo región, bien con el botón, bien con la tecla `R`. Ahora sitúa el cursor del ratón en la parte en la que quieras comenzar a dibujar la región. (Yo suelo comenzar por la esquina superior izquierda). Haz clic y arrastra el cursor hasta el punto donde quieras que finalice el diseño de la región. Verás que se va dibujando un rectángulo. Cuando sueltes el botón del ratón, verás que que se ha creado toda la región.
+
+```{r segmentacion_17, echo=F, fig.cap="Creación de una región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_040.png?raw=true")
+```
+
+El botón azul con una `T` y una flecha de dos puntas a su lado, es para asignar una tiplogía a la región. Si lo pulsas, se abrirá un cuadro de diálogo en el que podrás elegir la tipología que quieras. Esta parte está relacionada con la pestaña `Ontology` que hay en la parte superior del editor.
+
+```{r segmentacion_18, echo=F, fig.cap="Nombrar una región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_041.png?raw=true")
+```
+
+En este caso, no vamos a asignar ninguna tipología, así que pulsa `Esc` para salir del diálogo.
+
+Borra la región que acabas de crear. No la necesitas para nada.
+
+Pasa a la página siguiente. Verás que hay una serie de problemas que hay que resolver. Los he marcado dentro de unos rectángulos rojos. Dos regiones, muy pequeñas, son muy fáciles de borrar. Los otros tres problemillas son un poco más liados, pero no mucho.
+
+```{r segmentacion_19, echo=F, fig.cap="Arreglar la región principal", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_042.png?raw=true")
+```
+
+Empieza por las regiones pequeñas. Activa el modo de edición de regiones y haz clic en una de ellas. Verás que se activa el perímetro con los puntos blancos. Haz clic en la papelera y desaparecerá. Repítelo con la otra región.
+
+Lo más problemático, como te he dicho, son las tres gibas que le salen por el margen izquierdo. Aquí no se puede borrar como en el caso anterior, pues la borrarias toda, y eso no te interesa. El método más sencillo es cortar esas protuberancias que sobresalen en el margen izquierdo.
+
+Para ello, activa el modo de edición de regiones. Ahora haz clic en el botón de la tijera que hay en la parte superior derecha de la ventana de edición de regiones (también puedes activar las tijeras pulsando la letra `C`). El botón pasará de color anaranjado a otro verde y el cursor habrá cambiado a una cruz de trazos muy finos. Ya tienes activada la tijera.
+
+Sitúate por encima y a la izquierda de la parte superior de la protuberancia que quieres cortar. Haz clic y arrastra el cursor hacia la derecha y hacia abajo, de forma que traces un rectángulo que cubra la parte que quieres cortar. Irá apareciendo un margen de rayas y el interior de ese nuevo rectángulo se coloreará.
+
+```{r segmentacion_20, echo=F, fig.cap="Recortar y borrar porción de región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_043.png?raw=true")
+```
+
+Cuando hayas trazado el rectángulo que cubre toda la zona que quieres cortar (borrar en este caso), suelta el botón del ratón. Verás que la parte que has seleccionado se ha coloreado de rojo y que ha desaparecido la parte que no te interesaba. Si te has equivocado, puedes deshacerlo con control `Z` o con el botón de la flecha hacia atrás.
+
+```{r segmentacion_21, echo=F, fig.cap="Recortar y borrar porción de región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_044.png?raw=true")
+```
+
+Ahora procede con las demás _jorobas_ de este folio, y de los otros dos. Todos tienen este problema que ha surgido por culpa de las notas manuscritas de los lectores.
+
+## Editar las líneas
+
+
+
 
 
