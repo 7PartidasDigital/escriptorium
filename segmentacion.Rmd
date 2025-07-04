@@ -232,6 +232,101 @@ Ahora procede con las demás _jorobas_ de este folio, y de los otros dos. Todos 
 
 ## Editar las líneas
 
+Si te has fijado, el borrar las regiones o partes de ellas, no se han borrado las líneas que había dentro de ellas. Borrarlas es sencillo. No hay que activar nada (si estás en en modo region o modo cortar, desactívalo).
+
+Lo usual es que el cursor sea un círculo verde con un signo `+` en su interior y con una flecha negra. Si lo tienes, sitúate encima de la línea que quieres interactuar. Si cambia a una mano entonces puede seleccionar esa línea. Haz clic y aparecerán los puntos que marcan la línea, y esta se habrá puesto de color negro. Para borrarla solo tienes que hacer clic en la papelera.
+
+```{r segmentacion_23, echo=F, fig.cap="Seleccionar varias líneas para borrarlas", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_045.png?raw=true")
+```
+
+Así puede borrar una única línea, si quieres borrar varias a la vez, lo que tienes que hacer, una vez seleccionada la primera, mantener pulsado la tecla de mayúsculas y cuando veas que aparece la mano, haces clic y a continuación las borras haciendo clic en la papelera.
+
+Recuerda que si algo sale mal, solo tienes que hacer clic en la flecha que va contra el sentido del reloj (o pulsar a la vez control (cmd) y `Z`).
+
+Borra ahora las de las demás páginas. Solo tienes que avanzar pulsando el signo `＞` de color azul que hay en la parte superior derecha de la página. Pero ojo, la primer de la segunda página si la borrar, se borra toda ella.
+
+Empieza por borrar las que están sueltas, como puedes ver en la imagen que hay a continuación. He seleccionado varias líneas, las que tienen una línea negra que acaban en unos cuadraditos blancos. Si haces clic en la papelera, se borrarán todas.
+
+```{r segmentacion_24, echo=F, fig.cap="Seleccionar varias líneas para borrarlas", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_046.png?raw=true")
+```
+
+Ahora vamos con lo más delicado. Evitar el texto manuscrtios que hay en las ters líneas restantes. Hay dos estrategias posibles. Una es cortas la parte de la línea que no interesa. La otra es desplazar el inicio de la línea, que estará marcado por una rayita vertical de color rosa. El uso de una u otra estrategia depende de la situación. Aquí interesa desahacerse de todo lo que haya en la parte izquierda, en el margen de la hoja. Lo mejor es borrar la línea cortándola. Activa la herramienta de corte (la tijera o `C` del teclado). Sitúate un poco por encima y a la izquierda de la línea que has de borrar. Pulsa el botón del ratón y arrastra hacia la derecha y hacia abajo, de forma que traces un rectángulo que cubra la parte que quieres cortar. Irá apareciendo un margen de rayas y la línea que vas a cortar (y en definitiva a borrar) se pondrá en color rojo. Tan pronto como sueltes el botón del ratón, verás que se ha borrado.
+
+```{r segmentacion_25, echo=F, fig.cap="Borrado de parte de una línea", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_047.png?raw=true")
+```
+
+Repite el proceso con las otras dos líneas que tienen texto manuscrito.
+
+Pasa a la imagen siguiente. Aquí tienes líneas que rebasan los márgenes de la caja de escritura y que no interesan. El procedimiento es el mismo que en el caso anterior.
+
+En la última hoja solo tienes una línea aislada que no interesa. Ya sabes cómo borrarla. Seleccionala y haz clic en la papelera.
+
+## Trazar nuevas líneas
+
+Vuelve a la primera página. Verás que hay una línea que no ha detectado el modelo. Es la que está abajo del todo, es una trsite `a`. Se trata de la signatura tipográfica. Quizá no te interese transcribirla, pero lo mejor es que sí la consideres. Así tendrás todo los datos que los impresores incluyeron en la edición.
+
+Lo primero es agrandar un poco la región. Asi que, activa con `R` el modo de edición de regiones y haz clic en la región. Verás que se activan los puntos blancos que marcan la región. Haz clic en el que está justo debajo de la palabra _cunpla_ (en la imagen lo verás porque el cursor está dentro de la región y la derecha de ese punto) y, sin soltar el botón del ratón, arrastra hacia abajo.
+
+```{r segmentacion_26, echo=F, fig.cap="Agrandando la región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_048.png?raw=true")
+```
+
+Verás que la región se agranda. Suelta el botón del ratón cuando hayas veas que la línea que no está segmentada queda bien dentro de la región (no hace falta que se muy grande el espacio que deje. Ahora haz lo mismo con el punto que hay justo debajo de la _a_.
+
+```{r segmentacion_27, echo=F, fig.cap="Agrandando la región", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_049.png?raw=true")
+```
+
+Ya tienes espacio suficiente para trazar la línea que falta. Desactiva el modo de región (pulsa `R` en el teclado o haz clic en el botón de los cuatro cuadraditos; estará en verde y debe estar en azul).
+
+Situa el curso un poco a la izquierda y por debajo de la letra `a`, haz clic y desplaza el cursor hasta un poco después de la letra `a`. Verás que se traza una línea. Vuelve a hacer clic y se habrá dibujado la línea.
+
+```{r segmentacion_28, echo=F, fig.cap="Dibujando nueva línea", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_050.png?raw=true")
+```
+
+Ya tienes listo el documento para proceder a la transcripción (en el siguiente capítulo). Antes de cerrar este capítulo, hay algunos botones que no te he explicado. Vamos con ellos.
+
+Al segmentar la imagen, no solo traza la región y las líneas, sino que también dibuja una cajas alrededor de cada una de las líneas. A esto lo llaman máscaras (`Mask`). Son fundamantales para la transcripción, pues permiten que el modelo reconozca el texto que hay dentro de ellas. Pulsa el botón de la máscara (o del antifaz) —tambieén lo puedes activar pulsando la `M` en el teclado—. Verás que aparecen unas cajas alrededor de cada una de las líneas.
+
+```{r segmentacion_29, echo=F, fig.cap="Máscaras de las líneas", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_051.png?raw=true")
+```
+
+Si haces clic en una de ellas, verás que se activan los puntos blancos que marcan la máscara. Puedes moverlos para modificar la forma de la máscara. Si lo haces, verás que la caja se va modificando.
+
+```{r segmentacion_30, echo=F, fig.cap="Delimitadores de las máscaras", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_052.png?raw=true")
+```
+
+Si haces clic en la papelera, se borrará la máscara. Si lo haces con el botón de la flecha hacia atrás (control `Z`), volverá a aparecer. Así que ten cuidado.
+
+Te he dicho que las máscaras son fundamentales porque encierran todo lo que la máquina va a intentar reconocer como texto. Si algo queda fuera de la máscará, no lo interpretará y no lo transcribirá. Así que es conveniente que las revises y las modifiques si es necesario. En la imagen que hay a continuación verás que la `O` de la primera línea no está bien delimitada; lo mismo sucede con la cuarta, que comienza como una `q` y lo más probables es que no la vea.
+
+```{r segmentacion_31, echo=F, fig.cap="Delimitadores de las máscaras", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_053.png?raw=true")
+```
+
+Puedes solucionarlo extendiendo la línea un poco hacia la izquierda. Vamos con la primera línea. Situa el cursor sobre la primer línea, cuando veas que cambia a una mano, haz clic. Verás que se activan los puntos blancos que delimitan la línea. Haz clic en el punto que está a la izquierda y arrástralo un poco hacia la izquierda. Verás que se modifica la máscara y que ahora la `O` está dentro de ella. Haz lo mismso con la cuarta línea. Verás que ahora la `q` está dentro de la máscara.
+
+Cuando hagamos la transcripción vermos que a lo mejor se produce un pequeño error en la tercera línea, la que comienza `amado`. Es posible que trasncriba `lamado` porque hay un trazo del encuadrede la inicial decorada.
+
+Ahora el botón con la flecha hacia abajo con los números `1` y `9`. Estre botón permite encender y apagar los números de las líneas. Si lo pulsas, verás que aparecen en le lado izquierdo de cada línea un círculo con un número dentro.
+
+```{r segmentacion_32, echo=F, fig.cap="Líneas numeradas", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_054.png?raw=true")
+```
+
+Esos círculos indican el orden en el que las líneas serán leídas por el modelo. A veces se lían un poco y hay un cierto desorden, pero para eso está el botón con la cara de robot que hay a su lado. Si lo pulsas, el modelo reordenará las líneas y las numerará de nuevo. En casos muy extremos hay que hacerlo a mano, pero ya llegaremos a eso.
+
+El botón con la `?` es la ayuda. Está en inglés, así que aquí te la presentamos en español, por si es un poco más clara.
+
+```{r segmentacion_33, echo=F, fig.cap="Ayuda de eScriptorium", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_055.png?raw=true")
+```
 
 
 
