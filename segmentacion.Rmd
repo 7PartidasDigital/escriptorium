@@ -168,19 +168,19 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 Si haces clic en la papelera, verás que desaparece la región. También lo puedes hacer con la tecla `Supr` del teclado (en los mAc hay que pulsar a la vez `fn` y la tecla de borrado). Si lo haces, verás que desaparece la región, pero no las líneas que haya detectado dentro. Para hacerlo hay que activar la edición de líneas. Lo vemos dentro un poco más adelante.
 
-Si de reperente te das cuenta de que no era esa la región que querías borrar, pulsa control Z (o el botón de la flecha contra el sentido del reloj) y volverá a aparecer la región (quizá tenga otro color).
+Si de reperente te das cuenta de que no era esa la región que querías borrar, pulsa control `Z` (o el botón de la flecha contra el sentido del reloj) y volverá a aparecer la región (quizá tenga otro color).
 
-Ya que la has recuperado. Vuelve a hacer clic en su interior. Aparecerán los puntos blancos que delimitan la región. Si haces clic en uno de ellos, verás que se convierte en un punto azul. Esto significa que lo puedes mover. Si lo arrastras, verás que la región se va modificando. Puedes modificar la forma de la región a tu antojo. Puedes moverlos, para hacer la región más grande o más pequeña, o incluso para cambiar su forma. Para lograrlo, debes tener la punta del cursor, que es un círuclo verde con un signo `+` en su interior, dentro de la región. Si no lo tienes, no podrás mover los puntos. Cuesta un poco al principio, pero es fácil acostumbrarse.
+Ya que la has recuperado, vuelve a hacer clic en su interior. Aparecerán los puntos blancos que marcan los vértices de la región. Si haces clic en uno de ellos, verás que se convierte en un punto azul. Esto significa que lo puedes mover. Si lo arrastras, verás que la región se va modificando. Puedes modificar la forma de la región a tu antojo. Puedes mover esos puntos para hacer la región más grande o más pequeña, o incluso para cambiar su forma. Para lograrlo, debes tener la punta del cursor, que es un círculo verde con un signo `+` en su interior y con una punta de flecha negra fuera, dentro de la región. Si no lo tienes, no podrás mover los puntos. Cuesta un poco al principio, pero es fácil acostumbrarse.
 
-Tras mover los puntos, verás que la región se ha modificado. Si te has equivocado, puedes deshacerlo con control Z o con el botón de la flecha hacia atrás. Mira lo que he hecho yo.
+Tras mover los puntos, verás que la región se ha modificado. Si te has equivocado, puedes deshacerlo con control `Z` o con el botón de la flecha hacia atrás. Mira lo que he hecho yo.
 
-```{r segmentacion_15, echo=F, fig.cap="Modificar la forma de una región", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+```{r segmentacion_15, echo=F, fig.cap="Modificar la forma de una región", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_038.png?raw=true")
 ```
 
 Has jugado con una región que no tenía mayor interés. Así que vuelve a hacer clic en su interior y pulsa la papelera. Desaparecerá la región.
 
-```{r segmentacion_16, echo=F, fig.cap="Modificar la forma de una región", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+```{r segmentacion_16, echo=F, fig.cap="Región borrada", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_039.png?raw=true")
 ```
 
