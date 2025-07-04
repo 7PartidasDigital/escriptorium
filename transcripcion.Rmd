@@ -15,8 +15,21 @@ output: html_document
 
 # Manual de eScriptorium
 ## Transcripción de documentos con eScriptorium
+### Introducción
 
-La segmentación 
+Una ve finalizada la segmentación y la revisión de la misma puedes proceder a la transcripción de los documentos.
+
+El grupo de investigación de _Filología Digital_ de la Universidad de Valladolid en conjunción con el _Hispanic Seminary of Medieval Studies_ está desarrollando varios modelos para la transcripción de manuscritos e impresos en letra gótica castellanos. Aquí por *castellano* entendemos el español medieval.
+
+Las normas por las que se rigen las transcripciones del Hispanic Seminary of Medieval Studies (HSMS en adelante) las puedes obtener [pulsando este enlace](https://www.hispanicseminary.org/docs/HSMS-manual.pdf/). Las transcripciones se pueden calificar como semipaleográficas.
+
+Los modelos de transcripción que se han desarrollado dentro del grupo UVa_HSMS desarrollan las abreviaturas y las marcan encerrándolas entre signos de mayor y menor que (＜ ＞), mientras que la letras superescritas se marcan posponíendoles un acento agudo (`).  Ninguno de los otros elementos que se pueden marcar en la transcripción, como rúbricas, iniciales, encabezamientos, signaturas, reclamos, etc., aunque se transcriben automáticamente, no se etiquetan. Podría haberse hecho durante la fase de segmantación, pero no se ha realizado porque hemos considerado que es mejor introducirlos durante la fase de corrección (véase el capítulo _Edición_).
+
+Actualmente, julio de 2025, solo tenemos un modelo totalmente operativo, el llamado `INCUNABLES_HSMS_v3_1.2_best`, que tiene una tasa de éxito cercana al 99 % y solo sirve para impresos en letra gótica publicados básicamente en español, portugués y catalán, aunque estas dos últimas lenguas no se han contemplado en el desarrollo del modelo. Para la información de cómo se ha creado este modelo véanse los artículos de Fradejas y Cossio 2025 y de Fradejas 2025.
+
+Sin embargo, hemos incorporado dos versiones de CatMuS (catmus-medival y CatMus-Medieval-160), dos versiones muy intereseantes modelo de transcripción desarrollado en Francia y que es capaz de transcribir manuscritos e impresos en varias lenguas medievales. La única _pega_ es que no desarrolla las abreviaturas, y tomaron una decisión que estimamos poco acertada y que complica el uso de este modelo. Decidieron que los pares _u_ / _v_ y _i_ / _j_ se transcriben indistintamente como _u_ e _i_. Es cierto que en latín no hay diferencia fonética, pero en castellano medieval, aunque se usan ambas grafías indistintamente para los fonemas vocálicos como los consonánticos, la diferencia fonética es importante y _normativizar_ indiscriminadamente estas grafías puede llevar a errores.
+
+Hay otros dos modelos para la lengua alemana: _autriannewspapers_ y _typewriter_best_. Este último se puede usar para transcribir textos en español escritos con máquina de escribir pero hay fallos con la _ñ_, las letras acentuadas y los signos de apartura de interrogación y exclamación. Lo estamos usando como base para crear un modelo para la transcripción de textos en español escritos con máquina de escribir, pero aún no está disponible.
 
 ```{r transcripción_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")

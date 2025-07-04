@@ -1,5 +1,5 @@
 ---
-title: "Transcripción de documentos con eScriptorium"
+title: "Edición de documentos con eScriptorium"
 author:
 - "José Manuel Fradejas Rueda"
 - "Filología Digital UVa"
@@ -14,9 +14,11 @@ output: html_document
 </div>
 
 # Manual de eScriptorium
-## Transcripción de documentos con eScriptorium
+## Edición de documentos con eScriptorium
 
-La segmentación 
+Una vez hecha la transcripción de un documento, podemos proceder a la edición de los textos. Para ello, eScriptorium nos ofrece una serie de herramientas que nos permiten realizar diferentes tareas de edición y corrección, pues la transcripción inicial puede contener errores o no estar completa, no en vano lo ha hecho una máquina y los modelos, por muy buenos que sean, no son perfectos.
+
+
 
 ```{r transcripción_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
