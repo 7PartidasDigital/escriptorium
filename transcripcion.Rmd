@@ -36,6 +36,55 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 ``` 
 
 
+### Transcripción de documentos
+
+Entra en *eScriptorium* y selecciona el documento `INCUNABLE_01` que ya has segmentado y revisado en el capítulo anterior. Cuando tengas las miniaturas a la vista, pulsa el botón `Select all`. Todas la miniaturas se seleccionarán y tendrán el marco de color negro. Verás que todas tienen las rayitas verdes de la segmentación que realizaste en el capítulo anterior. Ahora haz clic en el botón `Transcribe`. Se abrirá una ventana de diálogo.
+
+```{r transcripción_02, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_060.png?raw=true")
+```
+
+Si pulsas e desplegable bajo `Select a model` aparecerán todos los posibles modelos a los que tienes acceso.
+
+```{r transcripción_03, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_061.png?raw=true")
+```
+
+Selecciona `INCUNABLES_HSMS_v3_1.2_best`. El siguiente desplegable, bajo `Select a transcription` te permite elegir un nombre para la transcripción. Por defecto tomará el nombre el modelo, así que déjalo como está. Y pulsa el botón `Transcribe`. Se lanzará el proceso de transcripción. Verás que está trabajando por que los marcos de las miniaturas aumentan y dismunuyen en luminosidad, además, dentro de cada una de ellas verás una franja amarillenta con una signo de prohibido que sirve para detener el proceso. No hagas nada, en pocos segundos se habrá transcrito todo. Lo sabrás porque en la parte superior, derecha, bajo la barra negra de menú verás un mensaje que dice `Transcription done! (n)`, en donde `n` es el número de imágenes transcritas. En este caso son cuatro.
+
+```{r transcripción_04, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_062.png?raw=true")
+```
+
+Si refrescas la página, desparecerán los marcos negros y la debajo de cada minaitura habrá aparecido una barra azul con la leyenda `100%`. Eso quiere decir que todo ha ido bien y que la transcripción está finalizada.
+
+
+```{r transcripción_05, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_063.png?raw=true")
+```
+
+Ahora puedes ver las transcripciones. Puedes acceder a ellas de varias formas. Si posas el cursor sobre cualquiera de las miniatura, se intensificará el color azulado que hay dentro de las minaturas. Si haces clic, te llevará a la transcripción de esa imagen. En cambio, si haces clic en la pestaña `Edit`, entonces accederás a la transcripción de la primera imagen. Haz clic en `Edit`. En el navegador deberás ver algo idéntico a lo que hay en la imagen siguiente:
+
+```{r transcripción_06, echo=F, fig.cap="Pantalla de edición de la transcripción", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_064.png?raw=true")
+```
+
+Si no lo ves como en la imagen anterior, se debe a que desactivaste la opción de ver la transcripción durante el capítulo anterior. Para activarla, pulsa el segundo botón gris que haya en la parte superior derecha, el que tieen una `A` y el signo japonés. Es el que está a la derecha del que activa editor de segmentación. ¿Lo tienes ya? ¡Genial!
+
+En la parte izquierda tienes el editor de segmentación, que ya conoces, y en la parte derecha tienes el editor de transcripción. En la parte superior de este editor verás dos botones azules, con un `-` y un `+`. Sirven para aumentar el tamaño de la fuente de la transcripción. Si pulsas el `+` verás que la fuente aumenta y si pulsas el `-` verás que disminuye. Puedes ajustar el tamaño a tu gusto.
+
+No parece que sea un sitio ideal para editar y corregir. Hagamos un poco de magia. Sitúa el cursor sobre la primera línea de la transcripción. Observarás que se oscurece un poco la imagen de la izquierda a la vez que se ilumina la primera línea.
+
+```{r transcripción_07, echo=F, fig.cap="Selección de una línea", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_065.png?raw=true")
+```
+
+Pero así no puedes corregir. Hagamos un poco más de magia. Haz clic sobre esa primera línea se la transcripción. Verás que se abre una ventana por encima de todo en la que puedes ver la reproducción de la imagen y la transcripción de esa línea. Ese es el editor.
+
+
+Y en esta primera hay dos errores.
+
+
 ```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
 ```
