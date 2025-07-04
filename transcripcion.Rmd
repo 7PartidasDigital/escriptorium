@@ -324,7 +324,7 @@ Esos círculos indican el orden en el que las líneas serán leídas por el mode
 
 El botón con la `?` es la ayuda. Está en inglés, así que aquí te la presentamos en español, por si es un poco más clara.
 
-```{r segmentacion_33, echo=F, fig.cap="Ayuda de eScriptorium", message=FALSE, warning=FALSE, out.width='60%', fig.align="center"}
+```{r segmentacion_33, echo=F, fig.cap="Ayuda de eScriptorium", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_055.jpeg?raw=true")
 ```
 
