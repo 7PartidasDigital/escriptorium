@@ -328,6 +328,18 @@ El botón con la `?` es la ayuda. Está en inglés, así que aquí te la present
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_055.png?raw=true")
 ```
 
+Por cierto, hay posibilidades que no te he podido mostrar porque el texto no se ha prestado. La más importante es la de unir líneas. A veces, el modelo ha considerado que hay dos líneas diferentes cuando en realidad son una sola. Puede deberse a que el copista o el impresor dejó espacio en blanco, como en esta línea de otro libro impreso (que es una colección de modelos de escritos notariales y jurídicos), en la que hay un espacio en blanco que se ha dejado a propósito para que quien utilice esa plantilla ponga, en este caso, el nombre de una nave.
+
+```{r segmentacion_34, echo=F, fig.cap="Espacios en blanco", message=FALSE, warning=FALSE, out.width='75%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_056.png?raw=true")
+```
+
+Si el modelo lo ha considerado como dos líneas, hay que unirlas. Para ello, se sitúa el cursor sobre el primer fragmento de línea y, manteniendo pulsada la tecla de mayúsculas, se selecciona la segunda parte de la línea. Verás que se activan los puntos blancos que delimitan las líneas. Ahora, si pulsas la letra `J` en el teclado, o en el botón que presenta cuatro flechas que se unen en el centro, se unirá las dos porciones de líneas.
+
+Una recomendación final, aunque a lo mejor tenía que haber sido inicial. Es más sencillo manejar *eScriptorium* con ratón que con el trackpad del portátil. Así que si tienes un ratón, úsalo. Si no, puedes usar el trackpad, pero te costará un poco más.
 
 
+```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
+```
 
