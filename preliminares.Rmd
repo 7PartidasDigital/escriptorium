@@ -7,11 +7,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-<div>
-<center>
-<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
-</center>
-</div>
+```{r prelim_logo, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
 
 # Manual de eScriptorium
 ## Preliminares
@@ -23,6 +21,6 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 
 
-```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
+```{r prelim_00, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
 ```

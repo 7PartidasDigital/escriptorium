@@ -7,18 +7,16 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-<div>
-<center>
-<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
-</center>
-</div>
+```{r segmentacion_logo, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
 
 # Manual de eScriptorium
 ## Segmentación
 
-La segmentación es es proceso básico para poder llevar a cabo la transcripción de cualquier texto que tengamos en una imagen. En esta fase se le pide que localice la regiones de texto que hay dentro de la imagen y las líneas que lo constituye. Para ello, `eS` emplea un modelo de segmentación que se ha entrenado previamente con un conjunto de datos. Este modelo es capaz de detectar las regiones de texto y las líneas de forma automática. Pero no es el único que puedes usar. Puedes crear tu propio modelo de segmentación o usar uno ya existente. Para ello, haz clic en el botón `Models` que hay en la barra negra superior.
+La segmentación es el proceso básico para poder llevar a cabo la transcripción automática de cualquier texto que tengamos en una imagen. En esta fase se le pide que localice la regiones de texto que hay dentro de la imagen y las líneas que lo constituyen. Para ello, `eS` emplea por defecto un modelo de segmentación que se ha entrenado previamente con un conjunto de datos. Este modelo es capaz de detectar las regiones de texto y las líneas de forma automática. Pero no es el único que puedes usar. Puedes crear tu propio modelo de segmentación o usar uno ya existente. Para ello, haz clic en el botón `Models` que hay en la barra negra superior.
 
-Se abrirá una nueva página donde podrás ver los modelos de segmentación que tienes disponibles. Son los que los usuarios del grupo de `Filología Digital` de la Universidad hemos creado (INCUANBLES_HSMS_v3_1.2_best) u otros que hemos localizado en la red y que son públicos como CatMus_Medieval-160. Los que hay disponibles ahora mismo son suficientes para este manual.
+Se abrirá una nueva página donde podrás ver los modelos de segmentación que tienes disponibles. Son los que los usuarios del grupo de `Filología Digital` de la Universidad hemos creado (INCUANBLES_HSMS_v3_1.2_best) y otros que hemos localizado en la red y que son públicos como `CatMus_Medieval-160`. Los que hay disponibles ahora mismo son suficientes para este manual, pero en el futuro habrá otros modelos.
 
 ```{r segmentacion_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
@@ -339,7 +337,7 @@ Si el modelo lo ha considerado como dos líneas, hay que unirlas. Para ello, se 
 Una recomendación final, aunque a lo mejor tenía que haber sido inicial. Es más sencillo manejar *eScriptorium* con ratón que con el trackpad del portátil. Así que si tienes un ratón, úsalo. Si no, puedes usar el trackpad, pero te costará un poco más.
 
 
-```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
+```{r segmentacion_00, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
 ```
 

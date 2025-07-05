@@ -1,6 +1,5 @@
 ---
-title:
-- "Primer proyecto"
+title: "Primer proyecto"
 author:
 - "José Manuel Fradejas Rueda"
 - "Filología Digital UVa"
@@ -8,14 +7,12 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-<div>
-<center>
-<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
-</center>
-</div>
+```{r proyecto_logo, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
 
 # Manual de eScriptorium
-## Mi primer proyecto
+## Primer proyecto
 
 Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. En `eS` un proyecto es un conjunto de documentos que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en `My Projects` en la barra negra superior y a continuación haz clic en el botón verde de la derecha que dice `Create new Project`.
 
@@ -145,8 +142,8 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 Por último, el botón de `Alinear`. Esta es una función avanzada que, por el momento no vamos a explicar. Le dedicaremos un capítulo más adelante. Pero como te creo muy interesado esto te permitirá tomar una imagen y un texto trasncrito con otro sistema o  manualmente y emparejarlo. Si haces clic en él, se abrirá una ventana con el diálogo para alinear el texto de la imagen. La imagen que hay a continuación es un ejemplo de lo que verás si haces clic en el botón `Alinear`. Pulsa `Close`, pues, como en los casos anteriores.
 
-```{r es_uva24, echo=F, fig.cap="Ventana del diálogo de alineación o emparejamiento", message=FALSE, warning=FALSE, out.width='30%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_024.png?raw=true")
+```{r proyecto_00, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
 ```
 
 

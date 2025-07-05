@@ -7,11 +7,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-<div>
-<center>
-<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" width="350"/>
-</center>
-</div>
+```{r ppasos_logo, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
 
 # Manual de eScriptorium
 ## Primeros pasos
@@ -79,3 +77,9 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 Es importante que cambies la contraseña de tu cuenta. Para ello, haz clic en `Change password`. Aparecerá una ventana donde podrás introducir tu contraseña actual y la nueva. Introduce la nueva contraseña dos veces para confirmarla y haz clic en `Change my password`.
 
 Un botón importante del menú desplegabla, es el de salida, `Logout`. Cuando quieras salir de `eS`, haz clic en él y se cerrará la sesión.
+
+```{r ppasos_00, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
+
+# 
