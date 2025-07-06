@@ -205,9 +205,15 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 Haz clic en el botón `Export`. Puesto que es un texto muy breve, el material se habrá preparado en un abrir y cerrar de ojos y habrá aparecido un cartel de color verde en la parte superior derecham debajo de la bara negra que die `Export done! Download`. Haz clic en `Download`. Se abrirá una ventana de tu navegador con el texto. Ahora lo que tienes que hacer es en el menú del navegador `Archivo > Guardar página como`, lo que abrirá el diálogo del tu navegador para que le indiques cómo se llamará el fichero (da un nombre por defecto, pero es muy extraño, así que eleige uno que te sea informativo) y en dónde lo debe guardar.
 
+En el caso de que le hayas pedido que baje las imágenes o que lo hayas solicitado en cualquiera de los otros formatos, cuando hagas clic en `Download` se bajará automáticamente como un fichero comprimido con extensión `.zip` que contendrá las imágenes (si se las has pedido) y los textos transcritos, página a página.
 
+Por cierto, todas las descargas se guardan en los seruidores de *eScriptorium* y puedes acceder a ellas en cualquier momento. Para ello, haz clic en tu nombre de usuario (arriba a la derecha, dice `Hello usuario`. Se abrirá un menú desplegable. Haz clic en `Profile` y después e `Files`. Ahí aparecerán todos los ficheros que has descargado. Para decargar, pulsa en el icono azul que hay al princpio de cualquiera de los ficheros, eso sí, los nombres son ligeramente crípticos.
 
+```{r transcripción_19, echo=F, fig.cap="Descargar los ficheros", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_079.png?raw=true")
+```
 
+En la imagen anterior tienes los ficheros que he descargado mientras prepraba este manual. Todos comienzan `export`, les sigue el número interno del documento, en este caso `doc69`, a continuación el nombre que se le dio al documento cuando se creo `incunable_01`. A esto le sigue el tipo de formato (en la imagen tienes, de arriba abajo: `openitimarkdown`, `teixml` y `text`. Una secuencia de números que corresponden al año, mes, dia y hora y, por último, la extensión, `.txt` en el de texto plano, y `.zip` en todas las demás).
 
 Se descargará un fichero comprimido con extensión `.zip` que contendrá los textos transcritos.
 
