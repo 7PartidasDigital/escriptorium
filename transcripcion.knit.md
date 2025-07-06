@@ -3,13 +3,11 @@ title: "Transcripción"
 author:
 - "José Manuel Fradejas Rueda"
 - "Filología Digital UVa"
-date: "`r Sys.Date()`"
+date: "2025-07-06"
 output: html_document
 ---
 
-```{r trans_logo, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
-```
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true" width="20%" style="display: block; margin: auto;" />
 
 # Manual de eScriptorium
 ## Transcripción de documentos con eScriptorium
@@ -30,42 +28,48 @@ Sin embargo, hemos incorporado dos versiones de CatMuS (`catmus-medival` y `CatM
 
 Hay otros dos modelos para la lengua alemana: `autriannewspapers` y `typewriter_best`. Este último se puede usar para transcribir textos en español escritos con máquina de escribir pero hay fallos con la _ñ_, las letras acentuadas y los signos de apertura de interrogación (?) y exclamación (!), una característica exclusiva del español. Lo estamos empleando como base para crear un modelo para la transcripción de textos en español escritos con máquina de escribir, pero aún no está disponible.
 
-```{r transcripción_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
-``` 
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true" alt="Modelos disponibles por defecto" width="85%" />
+<p class="caption">Modelos disponibles por defecto</p>
+</div>
 
 
 ### Transcripción de documentos
 
 Entra en *eScriptorium* y selecciona el documento `INCUNABLE_01` que has segmentado y revisado en el capítulo anterior. Cuando tengas las miniaturas a la vista, pulsa el botón `Select all`. Todas la miniaturas se seleccionarán y tendrán el marco de color negro. Verás que todas tienen las rayitas verdes de la segmentación que realizaste en el capítulo anterior. Ahora haz clic en el botón `Transcribe`. Se abrirá una ventana de diálogo.
 
-```{r transcripción_02, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_060.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_060.png?raw=true" alt="Diálogo para la selección del modelo de transcripción" width="50%" />
+<p class="caption">Diálogo para la selección del modelo de transcripción</p>
+</div>
 
 Si pulsas el desplegable bajo `Select a model` aparecerán todos los modelos a los que tienes acceso.
 
-```{r transcripción_03, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_061.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_061.png?raw=true" alt="Diálogo para la selección del modelo de transcripción" width="50%" />
+<p class="caption">Diálogo para la selección del modelo de transcripción</p>
+</div>
 
 Selecciona `INCUNABLES_HSMS_v3_1.2_best`. El siguiente desplegable, bajo `Select a transcription`, te permite elegir un nombre para la transcripción. Por defecto tomará el nombre el modelo, así que déjalo como está. Y pulsa el botón `Transcribe`. Se lanzará el proceso de transcripción. Verás que está trabajando por que los marcos de las miniaturas aumentan y dismunuyen en luminosidad, además, dentro de cada una de ellas verás una franja amarillenta con una signo de prohibido que sirve para detener el proceso. No hagas nada, en pocos segundos se habrá transcrito todo. Lo sabrás porque en la parte superior, derecha, bajo la barra negra de menú verás un mensaje que dice `Transcription done! (n)`, en donde `n` es el número de imágenes transcritas. En este caso son cuatro.
 
-```{r transcripción_04, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_062.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_062.png?raw=true" alt="Transcripción finalizada" width="80%" />
+<p class="caption">Transcripción finalizada</p>
+</div>
 
 Si refrescas la página, desparecerán los marcos negros y debajo de cada miniatura habrá aparecido una barra azul con la leyenda `100%`. Eso quiere decir que todo ha ido bien y que la transcripción está finalizada.
 
-```{r transcripción_05, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_063.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_063.png?raw=true" alt="Transcripción finalizada" width="80%" />
+<p class="caption">Transcripción finalizada</p>
+</div>
 
 Ahora puedes ver las transcripciones. Puedes acceder a ellas de varias formas. Si posas el cursor sobre cualquiera de las miniaturas, se intensificará el color azulado que hay dentro de ellas. Si haces clic, te llevará a la transcripción de esa imagen. En cambio, si haces clic en la pestaña `Edit` accederás a la transcripción de la primera imagen. Haz clic en `Edit`. En el navegador deberás ver algo idéntico a lo que hay en la imagen siguiente:
 
-```{r transcripción_06, echo=F, fig.cap="Pantalla de edición de la transcripción", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_064.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_064.png?raw=true" alt="Pantalla de edición de la transcripción" width="80%" />
+<p class="caption">Pantalla de edición de la transcripción</p>
+</div>
 
 Si no lo ves como en la imagen anterior, se debe a que la opción de ver la transcripción está desactivada. Lo hiciste durante el capítulo anterior. Para activarla, pulsa el segundo botón gris que haya en la parte superior derecha, el que tiene una `A` y el signo japonés. Es el que está a la derecha del que activa el editor de segmentación (el de las rayitas horizontales). ¿Lo tienes ya? ¡Genial!
 
@@ -73,21 +77,24 @@ En la parte izquierda tienes el editor de segmentación, que ya conoces, y en la
 
 No parece que sea un sitio ideal para editar y corregir. Hagamos un poco de magia. Sitúa el cursor sobre la primera línea de la transcripción. Observarás que se vela un poco la imagen de la izquierda mientras la primera línea queda perfectamente iluminada.
 
-```{r transcripción_07, echo=F, fig.cap="Selección de una línea", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_065.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_065.png?raw=true" alt="Selección de una línea" width="80%" />
+<p class="caption">Selección de una línea</p>
+</div>
 
 Pero así no puedes corregir. Hagamos un poco más de magia. Haz clic sobre esa primera línea se la transcripción. Verás que se abre una ventana por encima de todo en la que puedes ver la reproducción de la imagen y la transcripción de esa línea. Ese es el editor.
 
-```{r transcripción_08, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_066.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_066.png?raw=true" alt="Activación del editor" width="80%" />
+<p class="caption">Activación del editor</p>
+</div>
 
 Y en esta primera hay dos errores. El primero es la `F` de `Ferdinando` , hay una `r`. El segundo es el desarrollo de `&c̃` que debería ser `&c⊂etera⊃`. Pero antes de empezar a corregir, vamos a ver qué más permite hacer la ventana del editor.
 
-```{r transcripción_09, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true" alt="Activación del editor" width="80%" />
+<p class="caption">Activación del editor</p>
+</div>
 
 En la esquina superior izquierda hay tres botones. Dos son evidentes, son flechas para avanzar o retroceder línea a línea por la hoja. Eso mismo lo puedes hacer con las flechas del teclado. El tercer botón, el de la `X`, sirve para cerrar la ventana del editor.
 
@@ -96,35 +103,40 @@ En la esquina superior izquierda hay tres botones. Dos son evidentes, son flecha
 
 El tercer botón, de fondo claro y que parece tener un teclado dentro, es el que activa el teclado virtual. Si lo pulsas, se abrirá una ventana con un teclado virtual que te permitirá introducir caracteres especiales, como el calderón `¶`, o los signos que en el _HSMS_ utilizamos para marcar el desarrollo de las abreviaturas. Por ahora son `⊂` y `⊃` pero en una nueva versión serán `＜` y `＞`, que no son los que puedes acceder desde el teclado, sino una versión especial que no es accesible fácilmente desde el teclado.
 
-```{r transcripción_10, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true" alt="Activación del editor" width="80%" />
+<p class="caption">Activación del editor</p>
+</div>
 
 Ten en cuento que los teclados virtuales no se encuentran por defecto en ninguna instancia de *eScriptorium*, por lo que si quieres usarlo, has de importarlos. Además, no los tendrás disponibles en todos los proyectos, pues pueden depender de cada uno de ellos.
 
 Para importar un teclado virtual, tienes que tener activo la opción de teclado virtual. Lo puedes hacer tanto en el panel de transcripción, que es el que has usado hasta ahora, como en el panel de texto (el tercer botón de visulizaciones). En la imagen que hay a continuación puedes ver los teclados virtuales activados en el panel de edición (el del centro) o en el de texto (el de la derecha). Pero ten en cuenta que lo que ves es un montaje ilustrativo. Solo puedes tener el teclado virtual activo: o en el modo de edición de la transcripción o en el modo texto. Nunca en ambos.
 
-```{r transcripción_11, echo=F, fig.cap="Teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true" alt="Teclados virtuales" width="80%" />
+<p class="caption">Teclados virtuales</p>
+</div>
 
 Una vez que lo tengas activo, has de hacer clic en `Manage Keyboards`. Aparecerá una nueva ventana en la que podrás ver cuales son los teclados virtuales de los que dispones
 
-```{r transcripción_12, echo=F, fig.cap="Manejar los teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_070.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_070.png?raw=true" alt="Manejar los teclados virtuales" width="80%" />
+<p class="caption">Manejar los teclados virtuales</p>
+</div>
 
 Tendrás unicamente uno que se llama `Demo`. Te servirá de muy poco. En este enlace (https://raw.githubusercontent.com/7PartidasDigital/escriptorium/refs/heads/main/HSMS_1.json) tienes el teclado que usamos para las transcripciones del [_Old Spanish Textual Archive_](https://oldspanishtextualarchive.org/) y en este https://raw.githubusercontent.com/HTR-United/cremma-medieval/refs/heads/main/CremmaLab.json el creado para usarlo con las normas de transcripción `CatMus`. En la ventana de gestión de teclados virtuales, pulsa el botón `Import a keyboard`. Se abrirá una nueva ventana. Corta y pega la url del teclado virtual del _HSMS_ en la casilla bajo la etiqueta `From an URL` y haz clic en el gotón `Import` y en un abrir y cerrar de ojos te responderá que ya lo ha importado.
 
-```{r transcripción_13, echo=F, fig.cap="Importar teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_071.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_071.png?raw=true" alt="Importar teclados virtuales" width="80%" />
+<p class="caption">Importar teclados virtuales</p>
+</div>
 
 Ahora ya tienes el teclado virtual del _HSMS_ disponible. Asi que, haz clic en la `x` que hay en la esquina superior derecha de la ventana. Ahora, en el desplegable de la izquierda, podrás seleccionar el teclado.
 
-```{r transcripción_14, echo=F, fig.cap="Teclado Virtual HSMS", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_072.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_072.png?raw=true" alt="Teclado Virtual HSMS" width="80%" />
+<p class="caption">Teclado Virtual HSMS</p>
+</div>
 
 Ya tienes a tu disposición el teclado virtual del _HSMS_. Puedes usarlo para introducir los signos de desarrollo de abreviaturas y las letras superescritas y algunas etiquetas con las que marcamos los textos para procesar procesarlo morofológicamente.
 
@@ -153,9 +165,10 @@ Si has acabado de revisar el texto, pulsa el botón del teclado virtual. Se supo
 
 Fíjate que en la parte de abajo de la ventana del editor de línea ha aparecido una nueva cajita que dice `+Toggle history`. Si la pulsas, la ventana se ampliará y te mostrará que es lo que has hecho en este línea.
 
-```{r transcripción_15, echo=F, fig.cap="Historial del cambios", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_073.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_073.png?raw=true" alt="Historial del cambios" width="80%" />
+<p class="caption">Historial del cambios</p>
+</div>
 
 La línea inferior te dice qué es lo que leyó el modelo, y en las otras dos te informará quién y cuándo lo cambio. Esto es muy interesante cuando se trabaja en equipo, ya que permite ver quién ha hecho qué y cuándo.
 
@@ -167,9 +180,10 @@ En el texto que estás manejando no ha habido ningún problema que no se haya ar
 
 Activa el último icono que hay arriba, a la derecha. El que tiene tres rayitas con un número en el margen. Ahora tendrás, espero, los tes paneles básicos: a la izquierda el de segmentación, en el centro el de transcripción y a la derecha el de texto. Si no es así, pulsa los tres iconos de las derecha, deberán estar en azul.
 
-```{r transcripción_16, echo=F, fig.cap="Panel de Texto", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_074.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_074.png?raw=true" alt="Panel de Texto" width="80%" />
+<p class="caption">Panel de Texto</p>
+</div>
 
 Encima del panel de la derecha verás que tienes el botón para activar el teclado virtual. Si lo pulsas, tan pronto como hagas clic en cualquier línea del texto, se abrirá el teclado virtual y puedes operar como en panel de transcripción. Descatívalo.
 
@@ -183,9 +197,10 @@ A veces, tienes que mover más de una lína que están consecutivas (es raro que
 
 Una vez que hayas acabado la transcripión y la haya revisado, puedes descargar los resultados. Para ello, pulsa el la pestana  `Images`, que te llevará a la pantalla en la que tienes todas las miniaturas. Ahora tienes que decidir si quieres descargar la trascripción de todas las imágenes o tan solo una o una selección. Vas a descargar todo (es un texto muy breve). Para ello, pulsa el botón `Select all`. Todos los marcos de las miniaturas se habrán vuelto negros. Ahora haz clic en el botón `Export` y aparecerá el diálogo de exportación.
 
-```{r transcripción_17, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_075.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_075.png?raw=true" alt="Diálogo de descarga" width="80%" />
+<p class="caption">Diálogo de descarga</p>
+</div>
 
 En la parte superior te informará de cuántas imágenes has seleccionado. En este caso 4. Debajo verás verás un recuadro azul que dicde `(PLACEHOLDER)`. Lo puedes ignorar. Lo importante son los desplegables. El primero te permite seleccionar la transcripción. En este caso pondrá `kraken: INCUNABLES_HSMS_v3_1.2.best`. Esto corresponde a la transcripción automática que has hecho junto con las correcciones. Pueden aparecer otro nombres, todo depende del nombre que le dieras en el momento de lanzar la transcripción automática, pero eso te dije que no lo cambiaras, que te quedaras con el que da por defecto. En cualquier caso, di abres el despelgable verás que hay varias opciones. La primera es la que te interesa, la de `kraken: INCUNABLES_HSMS_v3_1.2.best` y otra que dice `manual`. Esta esta vacía, no existe.
 
@@ -199,9 +214,10 @@ La ssegunda casilla dice `Include character bounding boxes`. Déjala son marcar.
 
 Por último tienes la etiqueta `Region types`. Aquí estarán marcados por defecto todas las casillas. Estas opciones son interesantes si quieres descargar las coordenadas de las regiones que has segmentado, pero estas solo funcionan en los formatos `PAGE` y `ALTO` y como lo que vas a descargar es un fichero de texto plano, no te interesa. Déjalas como están. El diálogo debe ser idéntico al de la imagen siguiente:
 
-```{r transcripción_18, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_077.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_077.png?raw=true" alt="Diálogo de descarga" width="80%" />
+<p class="caption">Diálogo de descarga</p>
+</div>
 
 Haz clic en el botón `Export`. Puesto que es un texto muy breve, el material se habrá preparado en un abrir y cerrar de ojos y habrá aparecido un cartel de color verde en la parte superior derecham debajo de la bara negra que die `Export done! Download`. Haz clic en `Download`. Se abrirá una ventana de tu navegador con el texto. Ahora lo que tienes que hacer es en el menú del navegador `Archivo > Guardar página como`, lo que abrirá el diálogo del tu navegador para que le indiques cómo se llamará el fichero (da un nombre por defecto, pero es muy extraño, así que eleige uno que te sea informativo) y en dónde lo debe guardar.
 
@@ -213,7 +229,8 @@ Se descargará un fichero comprimido con extensión `.zip` que contendrá los te
 
 La 
 
-```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
-```
+<div class="figure" style="text-align: center">
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true" alt="Filología Digital - eScriptorium - Universidad de Valladolid" width="25%" />
+<p class="caption">Filología Digital - eScriptorium - Universidad de Valladolid</p>
+</div>
 
