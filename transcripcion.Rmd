@@ -83,7 +83,7 @@ Pero así no puedes corregir. Hagamos un poco más de magia. Haz clic sobre esa 
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_066.png?raw=true")
 ```
 
-Y en esta primera hay dos errores. El primero es la `F` de `Ferdinando` , hay una `r`. El segundo es el desarrollo de `&c̃` que debería ser `&cetera⊃`. Pero antes de empezar a corregir, vamos a ver dos qué permite hacer la ventana del editor.
+Y en esta primera hay dos errores. El primero es la `F` de `Ferdinando` , hay una `r`. El segundo es el desarrollo de `&c̃` que debería ser `&c⊂etera⊃`. Pero antes de empezar a corregir, vamos a ver qué más permite hacer la ventana del editor.
 
 ```{r transcripción_09, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true")
@@ -91,19 +91,55 @@ knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/m
 
 En la esquina superior izquierda hay tres botones. Dos son evidentes, son flechas para avanzar o retroceder línea a línea por la hoja. Eso mismo lo puedes hacer con las flechas del teclado. El tercer botón, el de la `X`, sirve para cerrar la ventana del editor.
 
+
+### Teclado virtual
+
 El tercer botón, de fondo claro y que parece tener un teclado dentro, es el que activa el teclado virtual. Si lo pulsas, se abrirá una ventana con un teclado virtual que te permitirá introducir caracteres especiales, como el calderón `¶`, o los signos que en el _HSMS_ utilizamos para marcar el desarrollo de las abreviaturas. Por ahora son `⊂` y `⊃` pero en una nueva versión serán `＜` y `＞`, que no son los que puedes acceder desde el teclado, sino una versión especial que no es accesible fácilmente desde el teclado.
 
 ```{r transcripción_10, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true")
 ```
 
-Un poco más adelante te verás con detalle el uso del teclado virtual.
+Ten en cuento que los teclados virtuales no se encuentran por defecto en ninguna instancia de *eScriptorium*, por lo que si quieres usarlo, has de importarlos. Además, no los tendrás disponibles en todos los proyectos, pues pueden depender de cada uno de ellos.
+
+Para importar un teclado virtual, tienes que tener activo la opción de teclado virtual. Lo puedes hacer tanto en el panel de transcripción, que es el que has usado hasta ahora, como en el panel de texto (el tercer botón de visulizaciones). En la imagen que hay a continuación puedes ver los teclados virtuales activados en el panel de edición (el del centro) o en el de texto (el de la derecha). Pero ten en cuenta que lo que ves es un montaje ilustrativo. Solo puedes tener el teclado virtual activo: o en el modo de edición de la transcripción o en el modo texto. Nunca en ambos.
+
+```{r transcripción_11, echo=F, fig.cap="Teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true")
+```
+
+Una vez que lo tengas activo, has de hacer clic en `Manage Keyboards`. Aparecerá una nueva ventana en la que podrás ver cuales son los teclados virtuales de los que dispones
+
+```{r transcripción_12, echo=F, fig.cap="Manejar los teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_070.png?raw=true")
+```
+
+Tendrás unicamente uno que se llama `Demo`. Te servirá de muy poco. En este enlace (https://raw.githubusercontent.com/7PartidasDigital/escriptorium/refs/heads/main/HSMS_1.json) tienes el teclado que usamos para las transcripciones del [_Old Spanish Textual Archive_](https://oldspanishtextualarchive.org/) y en este https://raw.githubusercontent.com/HTR-United/cremma-medieval/refs/heads/main/CremmaLab.json el creado para usarlo con las normas de transcripción `CatMus`. En la ventana de gestión de teclados virtuales, pulsa el botón `Import a keyboard`. Se abrirá una nueva ventana. Corta y pega la url del teclado virtual del _HSMS_ en la casilla bajo la etiqueta `From an URL` y haz clic en el gotón `Import` y en un abrir y cerrar de ojos te responderá que ya lo ha importado.
+
+```{r transcripción_13, echo=F, fig.cap="Importar teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_071.png?raw=true")
+```
+
+Ahora ya tienes el teclado virtual del _HSMS_ disponible. Asi que, haz clic en la `x` que hay en la esquina superior derecha de la ventana. Ahora, en el desplegable de la izquierda, podrás seleccionar el teclado.
+
+```{r transcripción_14, echo=F, fig.cap="Teclado Virtual HSMS", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_072.png?raw=true")
+```
+
+Ya tienes a tu disposición el teclado virtual del _HSMS_. Puedes usarlo para introducir los signos de desarrollo de abreviaturas y las letras superescritas y algunas etiquetas con las que marcamos los textos para procesar procesarlo morofológicamente.
+
+¡Ah! Tienes la posibilidades de editarlo, exportarlo o borrarlo. Por ahora déjalo como está.
+
+
+### Corregir
+
+Puesto que ya tienes el teclado del _HSMS_ disponible, vas a corregir los errores que hay en la transcripción.
 
 Lo primero es corregir el error de la `r` por una `F`. Hazlo como lo haría en cualquier otro programa: borra lo que está mal y escribe lo correcto. Ahora vamos con el segundo error de la línea, el desarrollo de la abreviatura `&c`, tiene que ser `&c⊂etera⊃`. Borra el `ec` y con la ayuda del teclado virtual introduce los dos signos que encierran las abreviaturas y teclea las letras que has de ir dentro de los signos.
 
-Como la línea ya está correcta, inccluso ha incluido el guion para indicar que la palabra continúa en la siguiente línea, puedes pulsar el botón de la flecha hacia la derecha para pasar a la siguiente línea (también puedes dar `enter` o pulsar la flecha hacia abajo del teclado. En cualquier caso, la plataforma grabará los cambios y pasará a la línea siguiente.
+Como la línea ya está correcta, incluso ha añadido el guion para indicar que la palabra continúa en la siguiente línea, puedes pulsar el botón de la flecha hacia la derecha para pasar a la siguiente línea (también puedes dar `enter` o pulsar la flecha hacia abajo del teclado). En cualquier caso, la plataforma grabará los cambios y pasará a la línea siguiente.
 
-Ahí verás que tras `nuestro` hay un signo de apartura de abrevitura `⊂`. Eso es porque el modelo ha detectado que hay una posibles abreviatura debido al trazo descendente de la `y` de la línea anterior. Ha visto algo raro, pero no se ha atrevido a decidir que es una abreviatura y no ha desarrollado `nuestro⊂n⊃`. Tienes que borrarlo ya que es un error. dale a `enter` para pasar a la siguiente línea. Cuando llegues a las línea 7 verás que hay una forma muy rara `chancelle⊂nria`. Eso es porque el modelo ha detectado que hay una posible abreviatura provocada por la marcar manuscrita que hay sobre la `e`, pero no ha sabido desarrollarla totalmente. Tienes que borrar y eslo que hay de más para conseguir `chancelleria`. En la línea 12 decidió que la `o` al final de línea era parte de la palabra que continuaba en la siguiente línea, pero no es así. Borra el guion `-`. En la línea 15 verás que hay un espacio en blanco entres `tras` y `lado`. Eso es porque el modelo estima que hay _mucha_ distancia entre la `s` y la `l` y que por lo tanto son dos palabras diferentes. Borra el espacio y sigue revisando las líneas. En la línea 16, antes de `Bie⊂n⊃` debería haber un punto, pero la marca de un lector lo le ha permitido al sistema verlo. Ponlo y sigue comproabando el texto, línea a línea. Al final de la líne 18 no ha introeducido el guion que indicara que la palabra continúa en la siguiente línea. Posiblemente porque en su base de datos `rey` y `nos` tienen mayor ocurrencia como palabras independientes que como parte de una palabra. Pon el guion y sigue revisando el texto.
+Ahí verás que tras `nuestro` hay un signo de apertura de abrevitura `⊂`. Eso es porque el modelo ha detectado que hay una posibles abreviatura debido al trazo descendente de la `y` de la línea anterior. Ha visto algo raro, pero no se ha atrevido a decidir que es una abreviatura y no ha desarrollado `nuestro⊂n⊃`. Tienes que borrarlo ya que es un error. dale a `enter` para pasar a la siguiente línea. Cuando llegues a las línea 7 verás que hay una forma muy rara `chancelle⊂nria`. Eso es porque el modelo ha detectado que hay una posible abreviatura provocada por la marcar manuscrita que hay sobre la `e`, pero no ha sabido desarrollarla totalmente. Tienes que borrar y eslo que hay de más para conseguir `chancelleria`. En la línea 12 decidió que la `o` al final de línea era parte de la palabra que continuaba en la siguiente línea, pero no es así. Borra el guion `-`. En la línea 15 verás que hay un espacio en blanco entres `tras` y `lado`. Eso es porque el modelo estima que hay _mucha_ distancia entre la `s` y la `l` y que por lo tanto son dos palabras diferentes. Borra el espacio y sigue revisando las líneas. En la línea 16, antes de `Bie⊂n⊃` debería haber un punto, pero la marca de un lector lo le ha permitido al sistema verlo. Ponlo y sigue comproabando el texto, línea a línea. Al final de la líne 18 no ha introeducido el guion que indicara que la palabra continúa en la siguiente línea. Posiblemente porque en su base de datos `rey` y `nos` tienen mayor ocurrencia como palabras independientes que como parte de una palabra. Pon el guion y sigue revisando el texto.
 
 En la línea 19 tenemos un poco de embrollo por culpa del las marcas que introdujo un lector. El modelo ha leído `p⊂r⊃i⊃matica sosio` y parece que debe ser `p⊂re⊃matica se dio`. El `sosio` —en realidad `secio`— es una errata del cajista que el lector corrigió. Aquí lo que has de hacer es lo que indiquen las normas de transcipción que estés aplicando. En el caso de que usaras el sistema del HSMS `sosio` debería quedar como `se[ ](c)[d]io`.
 
@@ -111,17 +147,31 @@ En la línea 20 verás que el modelo ha detectado una posible `ç` por culpa de 
 
 Sigue así hasta que finalices la revisón del folio. Cuando llegue al final, haz clic en el botón de avance (`>` de color azul en la parte superior derecha) y pasarás a la página siguiente y así hasta que finalices la revisión de todas las páginas.
 
-### Teclado virtual
+### Comparar las versiones
 
-El teclado virtual es una herramienta muy útil para introducir caracteres especiales o incluso secuencia completas de palabras o etiquetas, como los que se usan en la transcripción del _HSMS_ o las transcipciones grafemáticas que emplean con el modelo quienes se adhieren al sistema de trasncripción propugnado por [CatMus[(https://catmus-guidelines.github.io/tools.html).
+Si has acabado de revisar el texto, pulsa el botón del teclado virtual. Se supone que lo tienes activo y estará en color azul;  deberá estar en blanco y haber desaparecido el teclado.
 
-Ten en cuento que los teclados virtuales no se encuentran por defecto en ninguna instancia de *eScriptorium*, por lo que si quieres usarlo, has de importarlos. Además, no los tendrás disponibles en todos los proyectos, pues pueden depender de cada uno de ellos.
+Fíjate que en la parte de abajo de la ventana del editor de línea ha aparecido una nueva cajita que dice `+Toggle history`. Si la pulsas, la ventana se ampliará y te mostrará que es lo que has hecho en este línea.
 
-Para importar un teclado virtual, tienes que tener activo la opción de teclado virtual. Lo puedes hacer tanto en el panel de transcripción, que es el que has usado hasta ahora, como en el panel de texto (el tercer botón de visulizaciones). En la imagen que hay a continuación puedes ver los teclados virtuales activados en el panel de edición (el del centro) o en el de texto (el de la derecha). Pero ten en cuenta que lo que ves es un montaje ilustrativo. Solo puedes tener el teclado virtual activo o en el modo de edición de la transcripción o en el modo texto. Nunca en ambos.
-
-```{r transcripción_11, echo=F, fig.cap="Teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
-knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true")
+```{r transcripción_15, echo=F, fig.cap="Historial del cambios", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_073.png?raw=true")
 ```
+
+La línea inferior te dice qué es lo que leyó el modelo, y en las otras dos te informará quién y cuándo lo cambio. Esto es muy interesante cuando se trabaja en equipo, ya que permite ver quién ha hecho qué y cuándo.
+
+### Panel texto
+
+Hay un tercer panel que puedes activar para corregir el texto. No es tan cómo como el editor de transcripción ya que no tendrás la línea original a la vista. Sin embargo, este panel de edición encierra una posibilidad: reordenar manualmente las líneas de las transcripción.
+
+En el texto que estás manejando no ha habido ningún problema que no se haya arreglado con la función de reordenar automáticamente las líneas. Lo viste cuando hablamos de la segmentación. Sin embargo, te lo voy a explicar, y manipularemos un par de líneas para que veas cómo funciona.
+
+Activa el último icono que hay arriba, a la derecha. El que tiene tres rayitas con un número en el margen. Ahora tendrás, espero, los tes paneles básicos: a la izquierda el de segmentación, en el centro el de transcripción y a la derecha el de texto. Si no es así, pulsa los tres iconos de las derecha, deberán estar en azul.
+
+```{r transcripción_16, echo=F, fig.cap="Panel de Texto", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_074.png?raw=true")
+```
+
+
 
 
 
