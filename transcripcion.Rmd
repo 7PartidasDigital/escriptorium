@@ -113,8 +113,15 @@ Sigue así hasta que finalices la revisón del folio. Cuando llegue al final, ha
 
 ### Teclado virtual
 
+El teclado virtual es una herramienta muy útil para introducir caracteres especiales o incluso secuencia completas de palabras o etiquetas, como los que se usan en la transcripción del _HSMS_ o las transcipciones grafemáticas que emplean con el modelo quienes se adhieren al sistema de trasncripción propugnado por [CatMus[(https://catmus-guidelines.github.io/tools.html).
 
+Ten en cuento que los teclados virtuales no se encuentran por defecto en ninguna instancia de *eScriptorium*, por lo que si quieres usarlo, has de importarlos. Además, no los tendrás disponibles en todos los proyectos, pues pueden depender de cada uno de ellos.
 
+Para importar un teclado virtual, tienes que tener activo la opción de teclado virtual. Lo puedes hacer tanto en el panel de transcripción, que es el que has usado hasta ahora, como en el panel de texto (el tercer botón de visulizaciones). En la imagen que hay a continuación puedes ver los teclados virtuales activados en el panel de edición (el del centro) o en el de texto (el de la derecha). Pero ten en cuenta que lo que ves es un montaje ilustrativo. Solo puedes tener el teclado virtual activo o en el modo de edición de la transcripción o en el modo texto. Nunca en ambos.
+
+```{r transcripción_11, echo=F, fig.cap="Teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true")
+```
 
 
 
