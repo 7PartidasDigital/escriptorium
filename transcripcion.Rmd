@@ -199,7 +199,7 @@ La ssegunda casilla dice `Include character bounding boxes`. Déjala son marcar.
 
 Por último tienes la etiqueta `Region types`. Aquí estarán marcados por defecto todas las casillas. Estas opciones son interesantes si quieres descargar las coordenadas de las regiones que has segmentado, pero estas solo funcionan en los formatos `PAGE` y `ALTO` y como lo que vas a descargar es un fichero de texto plano, no te interesa. Déjalas como están. El diálogo debe ser idéntico al de la imagen siguiente:
 
-```{r transcripción_18, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+```{r transcripción_18, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_077.png?raw=true")
 ```
 
@@ -209,7 +209,7 @@ En el caso de que le hayas pedido que baje las imágenes o que lo hayas solicita
 
 Por cierto, todas las descargas se guardan en los seruidores de *eScriptorium* y puedes acceder a ellas en cualquier momento. Para ello, haz clic en tu nombre de usuario (arriba a la derecha, dice `Hello usuario`. Se abrirá un menú desplegable. Haz clic en `Profile` y después e `Files`. Ahí aparecerán todos los ficheros que has descargado. Para decargar, pulsa en el icono azul que hay al princpio de cualquiera de los ficheros, eso sí, los nombres son ligeramente crípticos.
 
-```{r transcripción_19, echo=F, fig.cap="Descargar los ficheros", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+```{r transcripción_19, echo=F, fig.cap="Descargar los ficheros", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_079.png?raw=true")
 ```
 
