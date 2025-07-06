@@ -89,6 +89,34 @@ Y en esta primera hay dos errores. El primero es la `F` de `Ferdinando` , hay un
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true")
 ```
 
+En la esquina superior izquierda hay tres botones. Dos son evidentes, son flechas para avanzar o retroceder línea a línea por la hoja. Eso mismo lo puedes hacer con las flechas del teclado. El tercer botón, el de la `X`, sirve para cerrar la ventana del editor.
+
+El tercer botón, de fondo claro y que parece tener un teclado dentro, es el que activa el teclado virtual. Si lo pulsas, se abrirá una ventana con un teclado virtual que te permitirá introducir caracteres especiales, como el calderón `¶`, o los signos que en el _HSMS_ utilizamos para marcar el desarrollo de las abreviaturas. Por ahora son `⊂` y `⊃` pero en una nueva versión serán `＜` y `＞`, que no son los que puedes acceder desde el teclado, sino una versión especial que no es accesible fácilmente desde el teclado.
+
+```{r transcripción_10, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true")
+```
+
+Un poco más adelante te verás con detalle el uso del teclado virtual.
+
+Lo primero es corregir el error de la `r` por una `F`. Hazlo como lo haría en cualquier otro programa: borra lo que está mal y escribe lo correcto. Ahora vamos con el segundo error de la línea, el desarrollo de la abreviatura `&c`, tiene que ser `&c⊂etera⊃`. Borra el `ec` y con la ayuda del teclado virtual introduce los dos signos que encierran las abreviaturas y teclea las letras que has de ir dentro de los signos.
+
+Como la línea ya está correcta, inccluso ha incluido el guion para indicar que la palabra continúa en la siguiente línea, puedes pulsar el botón de la flecha hacia la derecha para pasar a la siguiente línea (también puedes dar `enter` o pulsar la flecha hacia abajo del teclado. En cualquier caso, la plataforma grabará los cambios y pasará a la línea siguiente.
+
+Ahí verás que tras `nuestro` hay un signo de apartura de abrevitura `⊂`. Eso es porque el modelo ha detectado que hay una posibles abreviatura debido al trazo descendente de la `y` de la línea anterior. Ha visto algo raro, pero no se ha atrevido a decidir que es una abreviatura y no ha desarrollado `nuestro⊂n⊃`. Tienes que borrarlo ya que es un error. dale a `enter` para pasar a la siguiente línea. Cuando llegues a las línea 7 verás que hay una forma muy rara `chancelle⊂nria`. Eso es porque el modelo ha detectado que hay una posible abreviatura provocada por la marcar manuscrita que hay sobre la `e`, pero no ha sabido desarrollarla totalmente. Tienes que borrar y eslo que hay de más para conseguir `chancelleria`. En la línea 12 decidió que la `o` al final de línea era parte de la palabra que continuaba en la siguiente línea, pero no es así. Borra el guion `-`. En la línea 15 verás que hay un espacio en blanco entres `tras` y `lado`. Eso es porque el modelo estima que hay _mucha_ distancia entre la `s` y la `l` y que por lo tanto son dos palabras diferentes. Borra el espacio y sigue revisando las líneas. En la línea 16, antes de `Bie⊂n⊃` debería haber un punto, pero la marca de un lector lo le ha permitido al sistema verlo. Ponlo y sigue comproabando el texto, línea a línea. Al final de la líne 18 no ha introeducido el guion que indicara que la palabra continúa en la siguiente línea. Posiblemente porque en su base de datos `rey` y `nos` tienen mayor ocurrencia como palabras independientes que como parte de una palabra. Pon el guion y sigue revisando el texto.
+
+En la línea 19 tenemos un poco de embrollo por culpa del las marcas que introdujo un lector. El modelo ha leído `p⊂r⊃i⊃matica sosio` y parece que debe ser `p⊂re⊃matica se dio`. El `sosio` —en realidad `secio`— es una errata del cajista que el lector corrigió. Aquí lo que has de hacer es lo que indiquen las normas de transcipción que estés aplicando. En el caso de que usaras el sistema del HSMS `sosio` debería quedar como `se[ ](c)[d]io`.
+
+En la línea 20 verás que el modelo ha detectado una posible `ç` por culpa de la pluma del lector y el sistema ha leido `çon` donde dice `con`. Borra la `ç` y pon la `c`.
+
+Sigue así hasta que finalices la revisón del folio. Cuando llegue al final, haz clic en el botón de avance (`>` de color azul en la parte superior derecha) y pasarás a la página siguiente y así hasta que finalices la revisión de todas las páginas.
+
+### Teclado virtual
+
+
+
+
+
 
 ```{r segmentacion_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
 knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
