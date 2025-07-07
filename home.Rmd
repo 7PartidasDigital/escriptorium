@@ -1,0 +1,27 @@
+---
+title: ""
+author: "Filología Digital UVa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<center><h1>Manual de uso de eScriptorium</h1></center>
+
+Este manual está pensado para que puedas aprender a utilizar `eScriptorium` de una forma sencilla y rápida. Está dividido en varias secciones, cada una de las cuales te enseñará a realizar una tarea específica y a la que podrás acceder desde el menú que hay a continuación.
+
+- [Acceder a la plataforma por primera vez]("https://aic.uva.es/escriptorium/02-alta.html")
+- [Crear un proyecto]("https://aic.uva.es/escriptorium/03-crear.html")
+- [Segmentar]("https://aic.uva.es/escriptorium/04-segmentacion.html")
+- [Transcribir]("https://aic.uva.es/escriptorium/05-transcripcion.html")
+
+Ten en cuenta que es un proyecto en construcción, con lo que es posible que el contenido cambie con rapidez.
+
+<center>Si quieres enviar algún comentario escríbenos a</center>
+
+<center><img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_correo.png?raw=true" alt="correo" width="300px"><center>
+
+
+
+```{r prelim_00, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='15%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```

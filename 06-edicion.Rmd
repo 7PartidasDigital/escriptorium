@@ -1,0 +1,31 @@
+---
+title: "Edición de documentos con eScriptorium"
+author:
+- "José Manuel Fradejas Rueda"
+- "Filología Digital UVa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+```{r logo_00, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='30%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
+
+
+# Manual de eScriptorium
+## Edición de documentos con eScriptorium
+
+Una vez hecha la transcripción de un documento, podemos proceder a la edición de los textos. Para ello, eScriptorium nos ofrece una serie de herramientas que nos permiten realizar diferentes tareas de edición y corrección, pues la transcripción inicial puede contener errores o no estar completa, no en vano lo ha hecho una máquina y los modelos, por muy buenos que sean, no son perfectos.
+
+
+
+```{r transcripción_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
+``` 
+
+
+```{r trans_logo, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true")
+```
+
