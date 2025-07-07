@@ -1,0 +1,13 @@
+bookdown::gitbook:
+  config:
+    toc:
+      collapse: subsection
+      before: |
+        <li><strong><a href="./">Manual eScriptorium</a></strong></li>
+      after: |
+        <li><a href="https://bookdown.org/" targe = "_blank">Publicado con Bookdown para</a></li>
+        <li><strong><a href="https://7partidas.hypotheses.org" target = "_blank">7 Partidas Digital</a></strong></li>
+        <li><a href="http://www.uva.es" target = "_blank">Universidad de Valladolid</a></li>
+    sharing:
+      twitter: yes
+  css: escriptorium.css

@@ -1,0 +1,208 @@
+# Transcripción de documentos con eScriptorium
+## Introducción
+
+Una vez finalizada la segmentación y la revisión de la misma, puedes proceder a la transcripción de los documentos.
+
+El grupo de investigación _Filología Digital_ de la Universidad de Valladolid, en conjunción con el _Hispanic Seminary of Medieval Studies_, está desarrollando varios modelos para la transcripción de manuscritos medievales e impresos en letra gótica castellanos. Aquí por *castellano* entendemos el ámbito iberorrománico central.
+
+Las normas por las que se rigen las transcripciones del _Hispanic Seminary of Medieval Studies_ (HSMS en adelante) las puedes obtener [pulsando este enlace](https://www.hispanicseminary.org/docs/HSMS-manual.pdf/). Estas se pueden calificar como semipaleográficas.
+
+Los modelos de transcripción que se han desarrollado dentro del grupo UVa_HSMS desarrollan las abreviaturas y se marcan encerrándolas entre signos de mayor y menor que (＜ ＞), mientras que la letras superescritas se marcan posponiéndoles un acento agudo (`).  Ninguno de los otros elementos que se pueden marcar en la transcripción, como rúbricas, iniciales, encabezamientos, signaturas, reclamos, etc., aunque se transcriben automáticamente, no se etiquetan. Podría haberse hecho durante la fase de segmantación, pero no se ha realizado porque hemos considerado que es mejor introducirlos durante la fase de corrección (véase el capítulo _Edición_) para reducir el ruido que podría producirse durante la fase de transcripción.
+
+### Modelos de transcripción
+Actualmente, julio de 2025, solo tenemos un modelo totalmente operativo, el llamado `INCUNABLES_HSMS_v3_1.2_best` (también se le designa `UVa_HSMS_Print`), que tiene una tasa de éxito cercana al 99. Se ha diseñado para impresos en letra gótica publicados básicamente en español, portugués y catalán, aunque estas dos últimas lenguas no se han contemplado en el desarrollo del modelo. Para la información de cómo se ha creado este modelo véanse los artículos de Fradejas y Cossio 2025 y de Fradejas 2025.
+
+Sin embargo, hemos incorporado dos versiones de CatMuS (`catmus-medival` y `CatMus-Medieval-160`), dos versiones muy intereseantes modelo de transcripción desarrollado en Francia y que es capaz de transcribir manuscritos e impresos en varias lenguas medievales. La única _pega_ es que no desarrolla las abreviaturas, y tomaron una decisión que estimamos poco acertada y que complica el uso de este modelo. Decidieron que los pares _u_ / _v_ y _i_ / _j_ se transcriben indistintamente como _u_ e _i_. Es cierto que en latín no hay diferencia fonética, pero en castellano medieval, aunque se usan ambas grafías indistintamente para los fonemas vocálicos como los consonánticos, la diferencia fonética es importante y _normativizar_ indiscriminadamente estas grafías puede llevar a errores.
+
+Hay otros dos modelos para la lengua alemana: `autriannewspapers` y `typewriter_best`. Este último se puede usar para transcribir textos en español escritos con máquina de escribir pero hay fallos con la _ñ_, las letras acentuadas y los signos de apertura de interrogación (?) y exclamación (!), una característica exclusiva del español. Lo estamos empleando como base para crear un modelo para la transcripción de textos en español escritos con máquina de escribir, pero aún no está disponible.
+
+```{r transcripción_01, echo=F, fig.cap="Modelos disponibles por defecto", message=FALSE, warning=FALSE, out.width='85%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true")
+``` 
+
+
+## Transcripción de documentos
+
+Entra en *eScriptorium* y selecciona el documento `INCUNABLE_01` que has segmentado y revisado en el capítulo anterior. Cuando tengas las miniaturas a la vista, pulsa el botón `Select all`. Todas la miniaturas se seleccionarán y tendrán el marco de color negro. Verás que todas tienen las rayitas verdes de la segmentación que realizaste en el capítulo anterior. Ahora haz clic en el botón `Transcribe`. Se abrirá una ventana de diálogo.
+
+```{r transcripción_02, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_060.png?raw=true")
+```
+
+Si pulsas el desplegable bajo `Select a model` aparecerán todos los modelos a los que tienes acceso.
+
+```{r transcripción_03, echo=F, fig.cap="Diálogo para la selección del modelo de transcripción", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_061.png?raw=true")
+```
+
+Selecciona `INCUNABLES_HSMS_v3_1.2_best`. El siguiente desplegable, bajo `Select a transcription`, te permite elegir un nombre para la transcripción. Por defecto tomará el nombre el modelo, así que déjalo como está. Y pulsa el botón `Transcribe`. Se lanzará el proceso de transcripción. Verás que está trabajando por que los marcos de las miniaturas aumentan y dismunuyen en luminosidad, además, dentro de cada una de ellas verás una franja amarillenta con una signo de prohibido que sirve para detener el proceso. No hagas nada, en pocos segundos se habrá transcrito todo. Lo sabrás porque en la parte superior, derecha, bajo la barra negra de menú verás un mensaje que dice `Transcription done! (n)`, en donde `n` es el número de imágenes transcritas. En este caso son cuatro.
+
+```{r transcripción_04, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_062.png?raw=true")
+```
+
+Si refrescas la página, desparecerán los marcos negros y debajo de cada miniatura habrá aparecido una barra azul con la leyenda `100%`. Eso quiere decir que todo ha ido bien y que la transcripción está finalizada.
+
+```{r transcripción_05, echo=F, fig.cap="Transcripción finalizada", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_063.png?raw=true")
+```
+
+Ahora puedes ver las transcripciones. Puedes acceder a ellas de varias formas. Si posas el cursor sobre cualquiera de las miniaturas, se intensificará el color azulado que hay dentro de ellas. Si haces clic, te llevará a la transcripción de esa imagen. En cambio, si haces clic en la pestaña `Edit` accederás a la transcripción de la primera imagen. Haz clic en `Edit`. En el navegador deberás ver algo idéntico a lo que hay en la imagen siguiente:
+
+```{r transcripción_06, echo=F, fig.cap="Pantalla de edición de la transcripción", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_064.png?raw=true")
+```
+
+Si no lo ves como en la imagen anterior, se debe a que la opción de ver la transcripción está desactivada. Lo hiciste durante el capítulo anterior. Para activarla, pulsa el segundo botón gris que haya en la parte superior derecha, el que tiene una `A` y el signo japonés. Es el que está a la derecha del que activa el editor de segmentación (el de las rayitas horizontales). ¿Lo tienes ya? ¡Genial!
+
+En la parte izquierda tienes el editor de segmentación, que ya conoces, y en la parte derecha el editor de transcripción. En la parte superior de este editor verás dos botones azules, con un `-` y un `+`. Sirven para aumentar el tamaño de la fuente de la transcripción. Si pulsas el `+` verás que la fuente aumenta y si pulsas el `-` verás que disminuye. Puedes ajustar el tamaño a tu gusto.
+
+No parece que sea un sitio ideal para editar y corregir. Hagamos un poco de magia. Sitúa el cursor sobre la primera línea de la transcripción. Observarás que se vela un poco la imagen de la izquierda mientras la primera línea queda perfectamente iluminada.
+
+```{r transcripción_07, echo=F, fig.cap="Selección de una línea", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_065.png?raw=true")
+```
+
+Pero así no puedes corregir. Hagamos un poco más de magia. Haz clic sobre esa primera línea se la transcripción. Verás que se abre una ventana por encima de todo en la que puedes ver la reproducción de la imagen y la transcripción de esa línea. Ese es el editor.
+
+```{r transcripción_08, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_066.png?raw=true")
+```
+
+Y en esta primera hay dos errores. El primero es la `F` de `Ferdinando` , hay una `r`. El segundo es el desarrollo de `&c̃` que debería ser `&c⊂etera⊃`. Pero antes de empezar a corregir, vamos a ver qué más permite hacer la ventana del editor.
+
+```{r transcripción_09, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true")
+```
+
+En la esquina superior izquierda hay tres botones. Dos son evidentes, son flechas para avanzar o retroceder línea a línea por la hoja. Eso mismo lo puedes hacer con las flechas del teclado. El tercer botón, el de la `X`, sirve para cerrar la ventana del editor.
+
+
+## Teclado virtual
+
+El tercer botón, de fondo claro y que parece tener un teclado dentro, es el que activa el teclado virtual. Si lo pulsas, se abrirá una ventana con un teclado virtual que te permitirá introducir caracteres especiales, como el calderón `¶`, o los signos que en el _HSMS_ utilizamos para marcar el desarrollo de las abreviaturas. Por ahora son `⊂` y `⊃` pero en una nueva versión serán `＜` y `＞`, que no son los que puedes acceder desde el teclado, sino una versión especial que no es accesible fácilmente desde el teclado.
+
+```{r transcripción_10, echo=F, fig.cap="Activación del editor", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true")
+```
+
+Ten en cuento que los teclados virtuales no se encuentran por defecto en ninguna instancia de *eScriptorium*, por lo que si quieres usarlo, has de importarlos. Además, no los tendrás disponibles en todos los proyectos, pues pueden depender de cada uno de ellos.
+
+Para importar un teclado virtual, tienes que tener activo la opción de teclado virtual. Lo puedes hacer tanto en el panel de transcripción, que es el que has usado hasta ahora, como en el panel de texto (el tercer botón de visulizaciones). En la imagen que hay a continuación puedes ver los teclados virtuales activados en el panel de edición (el del centro) o en el de texto (el de la derecha). Pero ten en cuenta que lo que ves es un montaje ilustrativo. Solo puedes tener el teclado virtual activo: o en el modo de edición de la transcripción o en el modo texto. Nunca en ambos.
+
+```{r transcripción_11, echo=F, fig.cap="Teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_069.png?raw=true")
+```
+
+Una vez que lo tengas activo, has de hacer clic en `Manage Keyboards`. Aparecerá una nueva ventana en la que podrás ver cuales son los teclados virtuales de los que dispones
+
+```{r transcripción_12, echo=F, fig.cap="Manejar los teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_070.png?raw=true")
+```
+
+Tendrás unicamente uno que se llama `Demo`. Te servirá de muy poco. En este enlace (https://raw.githubusercontent.com/7PartidasDigital/escriptorium/refs/heads/main/HSMS_1.json) tienes el teclado que usamos para las transcripciones del [_Old Spanish Textual Archive_](https://oldspanishtextualarchive.org/) y en este https://raw.githubusercontent.com/HTR-United/cremma-medieval/refs/heads/main/CremmaLab.json el creado para usarlo con las normas de transcripción `CatMus`. En la ventana de gestión de teclados virtuales, pulsa el botón `Import a keyboard`. Se abrirá una nueva ventana. Corta y pega la url del teclado virtual del _HSMS_ en la casilla bajo la etiqueta `From an URL` y haz clic en el gotón `Import` y en un abrir y cerrar de ojos te responderá que ya lo ha importado.
+
+```{r transcripción_13, echo=F, fig.cap="Importar teclados virtuales", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_071.png?raw=true")
+```
+
+Ahora ya tienes el teclado virtual del _HSMS_ disponible. Asi que, haz clic en la `x` que hay en la esquina superior derecha de la ventana. Ahora, en el desplegable de la izquierda, podrás seleccionar el teclado.
+
+```{r transcripción_14, echo=F, fig.cap="Teclado Virtual HSMS", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_072.png?raw=true")
+```
+
+Ya tienes a tu disposición el teclado virtual del _HSMS_. Puedes usarlo para introducir los signos de desarrollo de abreviaturas y las letras superescritas y algunas etiquetas con las que marcamos los textos para procesar procesarlo morofológicamente.
+
+¡Ah! Tienes la posibilidades de editarlo, exportarlo o borrarlo. Por ahora déjalo como está.
+
+
+## Corrección de la transcripción
+
+Puesto que ya tienes el teclado del _HSMS_ disponible, vas a corregir los errores que hay en la transcripción.
+
+Lo primero es corregir el error de la `r` por una `F`. Hazlo como lo haría en cualquier otro programa: borra lo que está mal y escribe lo correcto. Ahora vamos con el segundo error de la línea, el desarrollo de la abreviatura `&c`, tiene que ser `&c⊂etera⊃`. Borra el `ec` y con la ayuda del teclado virtual introduce los dos signos que encierran las abreviaturas y teclea las letras que has de ir dentro de los signos.
+
+Como la línea ya está correcta, incluso ha añadido el guion para indicar que la palabra continúa en la siguiente línea, puedes pulsar el botón de la flecha hacia la derecha para pasar a la siguiente línea (también puedes dar `enter` o pulsar la flecha hacia abajo del teclado). En cualquier caso, la plataforma grabará los cambios y pasará a la línea siguiente.
+
+Ahí verás que tras `nuestro` hay un signo de apertura de abrevitura `⊂`. Eso es porque el modelo ha detectado que hay una posibles abreviatura debido al trazo descendente de la `y` de la línea anterior. Ha visto algo raro, pero no se ha atrevido a decidir que es una abreviatura y no ha desarrollado `nuestro⊂n⊃`. Tienes que borrarlo ya que es un error. dale a `enter` para pasar a la siguiente línea. Cuando llegues a las línea 7 verás que hay una forma muy rara `chancelle⊂nria`. Eso es porque el modelo ha detectado que hay una posible abreviatura provocada por la marcar manuscrita que hay sobre la `e`, pero no ha sabido desarrollarla totalmente. Tienes que borrar y eslo que hay de más para conseguir `chancelleria`. En la línea 12 decidió que la `o` al final de línea era parte de la palabra que continuaba en la siguiente línea, pero no es así. Borra el guion `-`. En la línea 15 verás que hay un espacio en blanco entres `tras` y `lado`. Eso es porque el modelo estima que hay _mucha_ distancia entre la `s` y la `l` y que por lo tanto son dos palabras diferentes. Borra el espacio y sigue revisando las líneas. En la línea 16, antes de `Bie⊂n⊃` debería haber un punto, pero la marca de un lector lo le ha permitido al sistema verlo. Ponlo y sigue comproabando el texto, línea a línea. Al final de la líne 18 no ha introeducido el guion que indicara que la palabra continúa en la siguiente línea. Posiblemente porque en su base de datos `rey` y `nos` tienen mayor ocurrencia como palabras independientes que como parte de una palabra. Pon el guion y sigue revisando el texto.
+
+En la línea 19 tenemos un poco de embrollo por culpa del las marcas que introdujo un lector. El modelo ha leído `p⊂r⊃i⊃matica sosio` y parece que debe ser `p⊂re⊃matica se dio`. El `sosio` —en realidad `secio`— es una errata del cajista que el lector corrigió. Aquí lo que has de hacer es lo que indiquen las normas de transcipción que estés aplicando. En el caso de que usaras el sistema del HSMS `sosio` debería quedar como `se[ ](c)[d]io`.
+
+En la línea 20 verás que el modelo ha detectado una posible `ç` por culpa de la pluma del lector y el sistema ha leido `çon` donde dice `con`. Borra la `ç` y pon la `c`.
+
+Sigue así hasta que finalices la revisón del folio. Cuando llegue al final, haz clic en el botón de avance (`>` de color azul en la parte superior derecha) y pasarás a la página siguiente y así hasta que finalices la revisión de todas las páginas.
+
+### Comparar las versiones
+
+Si has acabado de revisar el texto, pulsa el botón del teclado virtual. Se supone que lo tienes activo y estará en color azul;  deberá estar en blanco y haber desaparecido el teclado.
+
+Fíjate que en la parte de abajo de la ventana del editor de línea ha aparecido una nueva cajita que dice `+Toggle history`. Si la pulsas, la ventana se ampliará y te mostrará que es lo que has hecho en este línea.
+
+```{r transcripción_15, echo=F, fig.cap="Historial del cambios", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_073.png?raw=true")
+```
+
+La línea inferior te dice qué es lo que leyó el modelo, y en las otras dos te informará quién y cuándo lo cambio. Esto es muy interesante cuando se trabaja en equipo, ya que permite ver quién ha hecho qué y cuándo.
+
+## Panel texto
+
+Hay un tercer panel que puedes activar para corregir el texto. No es tan cómo como el editor de transcripción ya que no tendrás la línea original a la vista. Sin embargo, este panel de edición encierra una posibilidad: reordenar manualmente las líneas de las transcripción.
+
+En el texto que estás manejando no ha habido ningún problema que no se haya arreglado con la función de reordenar automáticamente las líneas. Lo viste cuando hablamos de la segmentación. Sin embargo, te lo voy a explicar, y manipularemos un par de líneas para que veas cómo funciona.
+
+Activa el último icono que hay arriba, a la derecha. El que tiene tres rayitas con un número en el margen. Ahora tendrás, espero, los tes paneles básicos: a la izquierda el de segmentación, en el centro el de transcripción y a la derecha el de texto. Si no es así, pulsa los tres iconos de las derecha, deberán estar en azul.
+
+```{r transcripción_16, echo=F, fig.cap="Panel de Texto", message=FALSE, warning=FALSE, out.width='80%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_074.png?raw=true")
+```
+
+Encima del panel de la derecha verás que tienes el botón para activar el teclado virtual. Si lo pulsas, tan pronto como hagas clic en cualquier línea del texto, se abrirá el teclado virtual y puedes operar como en panel de transcripción. Descatívalo.
+
+Lo que nos interesa de este panel es el botón que hay a la izquierda del de los teclados virtuales, el que tiene dos triángulos, uno encima del otro.
+
+Sin activarlo, haz clic en cualquier línea del texto. Lo que has hecho es entrar en el editor de texto, como si estuvieras en cualquier procesador de textos. Sin embargo, si haces clic en el botón de los dos triángulos, se activará la función de reordenación de líneas. Sabrás que está activado porque se habrá encendido un reborde verde claro. Si ahora haces clic en cualquier línea del texto, verás que esta cambia de color, y pasa a tener un fondo azul. Eso quiere decir que esa línea está seleccionada y la puedes desplazar hacia arriba o hacia abajo. Para ello has de hacer clic en el botón derecho del ratón y arrastrar las línea hacia donde te sea necesario. Si lo haces, verás que la línea se desplaza y el resto de líneas se reordenan automáticamente. Puedes hacer esto con todas las líneas que quieras. Cuando hayas acabado, pulsa de nuevo el botón de los dos triángulos y se desactivará la función de reordenación de líneas.
+
+A veces, tienes que mover más de una lína que están consecutivas (es raro que eso suceda, pero con los ordenadores nunca se sabe). Para seleccionar varias líneas consecutivas, has de hacer clic en la primera línea mantenerr pulsada la tecla de mayúsculas y hacer clic en la otra línea que quieres seleccionar.
+
+## Descargar los resultados
+
+Una vez que hayas acabado la transcripión y la haya revisado, puedes descargar los resultados. Para ello, pulsa el la pestana  `Images`, que te llevará a la pantalla en la que tienes todas las miniaturas. Ahora tienes que decidir si quieres descargar la trascripción de todas las imágenes o tan solo una o una selección. Vas a descargar todo (es un texto muy breve). Para ello, pulsa el botón `Select all`. Todos los marcos de las miniaturas se habrán vuelto negros. Ahora haz clic en el botón `Export` y aparecerá el diálogo de exportación.
+
+```{r transcripción_17, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_075.png?raw=true")
+```
+
+En la parte superior te informará de cuántas imágenes has seleccionado. En este caso 4. Debajo verás verás un recuadro azul que dicde `(PLACEHOLDER)`. Lo puedes ignorar. Lo importante son los desplegables. El primero te permite seleccionar la transcripción. En este caso pondrá `kraken: INCUNABLES_HSMS_v3_1.2.best`. Esto corresponde a la transcripción automática que has hecho junto con las correcciones. Pueden aparecer otro nombres, todo depende del nombre que le dieras en el momento de lanzar la transcripción automática, pero eso te dije que no lo cambiaras, que te quedaras con el que da por defecto. En cualquier caso, di abres el despelgable verás que hay varias opciones. La primera es la que te interesa, la de `kraken: INCUNABLES_HSMS_v3_1.2.best` y otra que dice `manual`. Esta esta vacía, no existe.
+
+En el segundo deplegable puedes elegir qué tipo de fichero quieres que sea el que descargues. En la eS_UVa hemos activado cinco formatos: `Text`, `PAGE`, `ALTO`, `OpenITI mARkdown` y `OpenITI TEI xml`. El primero es un texto plano, el segundo es un formato de descripción de imágenes, el tercero es un formato de descripción de imágenes que se usa en bibliotecas y archivos, el cuarto es un formato de marcado que se usa para la edición colaborativa y el último es un formato de marcado que se usa para la edición colaborativa y para la publicación digital.
+
+Mi recomendación, en estos primeros pasos, y si no conoces los otros formatos, que pueden abrumar, es que selecciones `Text`. Es un formato de texto plano que puedes abrir con cualquier editor de textos, tanto en Windows como en Mac.
+
+A continuación hay una casilla de verificación que dice `Include images`. Si la marcas, se descargarán las imágenes originales, pero como ya las tienes, no merece la pena que las vuelvas a bajar.
+
+La ssegunda casilla dice `Include character bounding boxes`. Déjala son marcar. Podría ser interesante si quieres hacer un análisis de las coordenadas de los caracteres, pero como has corregido el texto, esa información es errónea.
+
+Por último tienes la etiqueta `Region types`. Aquí estarán marcados por defecto todas las casillas. Estas opciones son interesantes si quieres descargar las coordenadas de las regiones que has segmentado, pero estas solo funcionan en los formatos `PAGE` y `ALTO` y como lo que vas a descargar es un fichero de texto plano, no te interesa. Déjalas como están. El diálogo debe ser idéntico al de la imagen siguiente:
+
+```{r transcripción_18, echo=F, fig.cap="Diálogo de descarga", message=FALSE, warning=FALSE, out.width='20%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_077.png?raw=true")
+```
+
+Haz clic en el botón `Export`. Puesto que es un texto muy breve, el material se habrá preparado en un abrir y cerrar de ojos y habrá aparecido un cartel de color verde en la parte superior derecham debajo de la bara negra que die `Export done! Download`. Haz clic en `Download`. Se abrirá una ventana de tu navegador con el texto. Ahora lo que tienes que hacer es en el menú del navegador `Archivo > Guardar página como`, lo que abrirá el diálogo del tu navegador para que le indiques cómo se llamará el fichero (da un nombre por defecto, pero es muy extraño, así que eleige uno que te sea informativo) y en dónde lo debe guardar.
+
+En el caso de que le hayas pedido que baje las imágenes o que lo hayas solicitado en cualquiera de los otros formatos, cuando hagas clic en `Download` se bajará automáticamente como un fichero comprimido con extensión `.zip` que contendrá las imágenes (si se las has pedido) y los textos transcritos, página a página.
+
+Por cierto, todas las descargas se guardan en los seruidores de *eScriptorium* y puedes acceder a ellas en cualquier momento. Para ello, haz clic en tu nombre de usuario (arriba a la derecha, dice `Hello usuario`. Se abrirá un menú desplegable. Haz clic en `Profile` y después e `Files`. Ahí aparecerán todos los ficheros que has descargado. Para decargar, pulsa en el icono azul que hay al princpio de cualquiera de los ficheros, eso sí, los nombres son ligeramente crípticos.
+
+```{r transcripción_19, echo=F, fig.cap="Descargar los ficheros", message=FALSE, warning=FALSE, out.width='50%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_079.png?raw=true")
+```
+
+En la imagen anterior tienes los ficheros que he descargado mientras prepraba este manual. Todos comienzan `export`, les sigue el número interno del documento, en este caso `doc69`, a continuación el nombre que se le dio al documento cuando se creo `incunable_01`. A esto le sigue el tipo de formato (en la imagen tienes, de arriba abajo: `openitimarkdown`, `teixml` y `text`. Una secuencia de números que corresponden al año, mes, dia y hora y, por último, la extensión, `.txt` en el de texto plano, y `.zip` en todas las demás).
+
+
+```{r transcrip_35, echo=F, fig.cap="Filología Digital - eScriptorium - Universidad de Valladolid", message=FALSE, warning=FALSE, out.width='25%', fig.align="center"}
+knitr::include_graphics("https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_eS_logo.png?raw=true")
+```
+
