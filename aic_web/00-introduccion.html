@@ -47,10 +47,6 @@
 <p class="parrafo">Conscientes de esta limitación, investigadores de campos dispares han trabajado durante años en el desarrollo de herramientas capaces de transformar estas imágenes en texto editable y manipulable digitalmente. Gracias a los avances en el reconocimiento óptico de caracteres (OCR) y, más recientemente, en la inteligencia artificial y el aprendizaje automático, se han desarrollado sistema de reconocimiento automático de letra manuscrita, por lo que hoy en día es posible subir la imagen de un documento a un ordenador y obtener, en cuestión de segundos, un archivo de texto editable.<p/>
 <p class="parrafo">La incorporación de estas tecnologías ha revolucionado el trabajo de investigadores en filología e historia, al facilitar el acceso y el análisis de fuentes documentales antes inaccesibles o difíciles de consultar. Ahora es posible realizar búsquedas automáticas en grandes corpus textuales, comparar variantes de manuscritos, analizar patrones lingüísticos o literarios. Lo que amplía enormemente las posibilidades de investigación, preservación y difusión del conocimiento en estos campos especializados.</p>
 <br />
-    <h2>Automatic Text Recognition (ATR)</h2>
-    <p class="parrafo">
-        La <strong>Automatic Text Recognition</strong> (ATR) es el proceso automatizado de conversión de texto presente en documentos analógicos digitalizados en datos textuales legibles por máquina. Este proceso utiliza tecnologías avanzadas de inteligencia artificial y aprendizaje automático para extraer texto de imágenes de documentos, independientemente de si el texto es impreso o manuscrito. ATR abarca tanto el reconocimiento óptico de caracteres (OCR) como el reconocimiento de texto manuscrito (HTR), y su objetivo es facilitar la digitalización y accesibilidad de grandes volúmenes de información textual. La ATR surge como evolución de las primeras técnicas de reconocimiento de caracteres, integrando modelos estadísticos y de aprendizaje profundo que permiten una mayor precisión y adaptabilidad frente a diferentes tipos de documentos y caligrafías.
-    </p>
     <h2>Optical Character Recognition (OCR)</h2>
     <p class="parrafo">
         El <strong>Optical Character Recognition</strong> (OCR) es una tecnología que permite la conversión electrónica o mecánica de imágenes de texto impreso —como libros o periódicos— en texto codificado digitalmente. Los primeros desarrollos de OCR datan de principios del siglo XX, con inventos como el “Statistical Machine” de Emanuel Goldberg en la década de 1920 y la patente de Gustav Tauschek en 1935. Sin embargo, el término y la tecnología OCR como se conocen hoy se consolidaron a finales de los años 50, cuando IBM introdujo sistemas capaces de capturar datos de documentos impresos de manera automatizada. El OCR se caracteriza por su enfoque en el reconocimiento de caracteres impresos, utilizando principalmente el análisis de formas y patrones de los caracteres.</p>
@@ -75,11 +71,20 @@
         <p class="parrafo">Ambas han hecho un trabajo magnífico. Pero para lograrlo, unos <em>duendecillos</em> han preparado, trabajosamente, modelos para que las imágenes, ya sean `jpg`, `png`, `tiff` o extraídas de `pdf` se puedan convertir en texto editable y manejable con los ordenadores para después usarlas en otros procesos.</p>
         <br />
     <p class="parrafo">
-        Las principales diferencias radican en el tipo de texto que cada tecnología aborda y en la complejidad de los algoritmos empleados. El OCR se especializa en texto impreso, donde la regularidad tipográfica facilita el reconocimiento. El HTR, por su parte, debe enfrentarse a la diversidad de estilos manuscritos, requiriendo técnicas más sofisticadas, que permiten la digitalización automatizada de cualquier tipo de texto, gracias a la integración de modelos de inteligencia artificial y aprendizaje profundo.
+        La diferencia principal entre ambas tecnologías radica en el tipo de texto que cada una de ellas aborda y en la complejidad de los algoritmos empleados. El OCR se especializa en texto impreso moderno, donde la regularidad tipográfica facilita el reconocimiento. El HTR, por su parte, debe enfrentarse a la diversidad de estilos manuscritos y tipográficos pretéritos, por lo que require técnicas más sofisticadas, que permiten la digitalización automatizada de cualquier tipo de texto, gracias a la integración de modelos de inteligencia artificial y aprendizaje profundo.
     </p>
     <p class="parrafo">
-        En resumen, mientras que el OCR fue pionero en la digitalización de textos impresos, el HTR amplió el alcance a documentos manuscritos. La ATR, como paradigma más reciente, engloba ambas disciplinas, ofreciendo soluciones integrales para la digitalización textual en contextos diversos y complejos.
-    </p>
+        El OCR fue pionero en la digitalización de textos impresos, el HTR amplió el alcance a documentos manuscritos e impresos antiguos.</p>
+<br />
+<h2>El proceso</h2>
+<p class="parrafo">El convertir las reproducciones digitales que nos ofrecen bibliotecas y archivos en texto editable y procesable con otras herramientas informáticas está al alcance de cualquiera que tenga acceso a una plataforma HTR.</p>
+<center>
+        <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_int-04.png?raw=true" alt="Flujo" style="width: 50%; height: auto;">
+<p class="pie">Flujo de trabajo en una plataforma HTR</p>
+        </center>
+<p class="parrafo">A la mayoría de los que necesiten hacer uso de un sistema HTR le bastará con los seis primeros pasos. Los dos últimos, <em>entrenamiento</em> y <em>evaluación</em> solo los tendría que abordar si los modelos de los que pudiera disponer no le fueran útiles y tuviera que crearlos. Esa, es realmente la parte más complicada y que lleva más tiempo.</p>
+<p class="parrafo">En este manual solo nos ocuparemos de los cuatro pasos centrales, desde la carga de las imágenes hasta el proceso de corrección de las transcripciones.</p>
+<br />
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true" alt="Filología Digital - eScriptorium - Universidad de Valladolid" style="width: 15%; height: auto;">
 <p class="pie">Filología Digital<br />Universidad de Valladolid<br />
