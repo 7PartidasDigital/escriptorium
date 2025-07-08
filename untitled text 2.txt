@@ -1,8 +1,0 @@
----
-title: "Segmentacion"
-author:
-- "José Manuel Fradejas Rueda"
-- "Filología Digital UVa"
-date: "`r Sys.Date()`"
-output: html_document
----
