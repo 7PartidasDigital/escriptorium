@@ -12,16 +12,96 @@
     .center { display: block; margin-left: auto; margin-right: auto; }
     .parrafo {margin-left: 2em; margin-right: 2em; }
     .pie {font-size: 0.85em; }
+    table {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            background: #fff;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #e8eaf6;
+        }
+        code {
+            background: #ececec;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .referencias {
+            font-size: 0.95em;
+            color: #444;
+        }
   </style>
 </head>
 <body>
-
 <h1>Introducción</h1>
 <center>
 <img src="https://pageupgang.github.io/images/UnderConstruction.png" alt="Filología Digital - eScriptorium - Universidad de Valladolid" style="width: 60%; height: auto;">
 </center>
-
-
+<body>
+    <h2>Automatic Text Recognition (ATR)</h2>
+    <p class="parrafo">
+        La <strong>Automatic Text Recognition</strong> (ATR) es el proceso automatizado de conversión de texto presente en documentos analógicos digitalizados en datos textuales legibles por máquina. Este proceso utiliza tecnologías avanzadas de inteligencia artificial y aprendizaje automático para extraer texto de imágenes de documentos, independientemente de si el texto es impreso o manuscrito. ATR abarca tanto el reconocimiento óptico de caracteres (OCR) como el reconocimiento de texto manuscrito (HTR), y su objetivo es facilitar la digitalización y accesibilidad de grandes volúmenes de información textual. La ATR surge como evolución de las primeras técnicas de reconocimiento de caracteres, integrando modelos estadísticos y de aprendizaje profundo que permiten una mayor precisión y adaptabilidad frente a diferentes tipos de documentos y caligrafías.
+    </p>
+    <h2>Optical Character Recognition (OCR)</h2>
+    <p class="parrafo">
+        El <strong>Optical Character Recognition</strong> (OCR) es una tecnología que permite la conversión electrónica o mecánica de imágenes de texto impreso —como libros, periódicos o facturas— en texto codificado digitalmente. Los primeros desarrollos de OCR datan de principios del siglo XX, con inventos como el “Statistical Machine” de Emanuel Goldberg en la década de 1920 y la patente de Gustav Tauschek en 1935. Sin embargo, el término y la tecnología OCR como se conocen hoy se consolidaron a finales de los años 50, cuando IBM introdujo sistemas capaces de capturar datos de documentos impresos de manera automatizada. El OCR se caracteriza por su enfoque en el reconocimiento de caracteres impresos, utilizando principalmente el análisis de formas y patrones de los caracteres.</p>
+        <p class="parrafo">Sin embargo, no todos los textos impresos son aptos para someterlos a programas de OCR. Así, numerosas bibliotecas y archivos han sometido parte de sus fondos a sistemas de OCR y los resultados son desastrosos. Valga como muestra la transcripción OCR que la Biblioteca Nacional de España ofrece para el comienzo de la versión castellana del <em>De Regimie principum</em> de <a href="https://es.wikipedia.org/wiki/Egidio_Romano" target="_blank" rel="noopener noreferrer"> Egidio Romano</a>, en su versión impresa en 1492</p>
+<center>
+<img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_int_01.jpeg?raw=true" alt="Egido y OCR" style="width: 75%; height: auto;">
+<p class="pie"></p>
+       </center> 
+    <h2>Handwritten Text Recognition (HTR)</h2>
+    <p class="parrafo">
+        El <strong>Handwritten Text Recognition</strong> (HTR) es la capacidad de los sistemas computacionales para interpretar y transcribir texto manuscrito a partir de imágenes digitales de documentos, fotografías o superficies de entrada táctil. El HTR puede operar en modo offline (a partir de imágenes escaneadas) o en modo online (capturando el movimiento del lápiz digital en tiempo real). A diferencia del OCR, el HTR debe afrontar la enorme variabilidad de la escritura manuscrita humana, lo que implica retos técnicos adicionales. Los primeros sistemas de HTR se basaban en reglas heurísticas y segmentación manual, pero el avance de los modelos estadísticos, como los modelos ocultos de Markov (HMM) y las redes neuronales profundas, ha permitido mejoras significativas en la precisión y robustez de estos sistemas en las últimas décadas.
+    </p>
+    <h2>Diferencias y evolución temporal</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tecnología</th>
+                <th>Origen aproximado</th>
+                <th>Objeto principal</th>
+                <th>Características técnicas</th>
+                <th>Retos principales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ATR</td>
+                <td>2010 (consolidación de IA)</td>
+                <td>Texto impreso y manuscrito</td>
+                <td>Integra OCR y HTR, usa IA y aprendizaje profundo</td>
+                <td>Adaptabilidad a múltiples tipos de texto y documentos</td>
+            </tr>
+            <tr>
+                <td>OCR</td>
+                <td>1920-1950</td>
+                <td>Texto impreso</td>
+                <td>Análisis óptico de formas y patrones</td>
+                <td>Variabilidad en fuentes, calidad de imagen</td>
+            </tr>
+            <tr>
+                <td>HTR</td>
+                <td>1980-actualidad (avances significativos en 2000)</td>
+                <td>Texto manuscrito e impresos antiguos</td>
+                <td>Modelos estadísticos y redes neuronales profundas</td>
+                <td>Variabilidad caligráfica, segmentación de caracteres</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="parrafo">
+        Las principales diferencias radican en el tipo de texto que cada tecnología aborda y en la complejidad de los algoritmos empleados. El OCR se especializa en texto impreso, donde la regularidad tipográfica facilita el reconocimiento. El HTR, por su parte, debe enfrentarse a la diversidad de estilos manuscritos, requiriendo técnicas más sofisticadas. ATR representa la convergencia de ambas tecnologías, permitiendo la digitalización automatizada de cualquier tipo de texto, gracias a la integración de modelos de inteligencia artificial y aprendizaje profundo.
+    </p>
+    <p class="parrafo">
+        En resumen, mientras que el OCR fue pionero en la digitalización de textos impresos, el HTR amplió el alcance a documentos manuscritos. La ATR, como paradigma más reciente, engloba ambas disciplinas, ofreciendo soluciones integrales para la digitalización textual en contextos diversos y complejos.
+    </p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/UVa_FD_LOGO.png?raw=true" alt="Filología Digital - eScriptorium - Universidad de Valladolid" style="width: 15%; height: auto;">
 <p class="pie">Filología Digital<br />Universidad de Valladolid<br />
