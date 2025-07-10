@@ -1,0 +1,121 @@
+---
+title: "Anotaciones en eScriptorium"
+author: "Traducción y adaptación didáctica"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+    theme: flatly
+---
+
+# ️ Anotaciones en eScriptorium
+
+>  **Nota importante**  
+> Este apartado trata sobre las funciones de **Anotación**, que son **diferentes** de las de **Segmentación**. Aunque ambas se usan en la edición de documentos, cumplen propósitos distintos.
+
+En eScriptorium puedes hacer anotaciones en dos niveles diferentes:
+
+-  **Sobre la imagen** (por ejemplo, señalar huellas, símbolos, ilustraciones…)
+-  **Sobre el texto** (por ejemplo, marcar nombres propios, abreviaturas, estructuras gramaticales…)
+
+Estas anotaciones se configuran desde la página de **Ontology** de cada documento. Puedes acceder a ella desde el menú o directamente en la dirección:  
+`{base_url}/document/{doc_id}/ontology`
+
+Allí encontrarás tres secciones muy importantes al final de la página:
+
+1. **Componentes de anotación**  
+2. **Anotaciones sobre imagen**  
+3. **Anotaciones sobre texto**
+
+![Ontología con secciones de anotación](img/ontology.jpg)
+
+## Componentes de Anotación
+
+> es muy importante saber que los "componentes" son las **categorías o tipos** de anotaciones que tú defines. Por ejemplo: “Iniciales”, “Decoración”, “Nombre propio”, etc.
+
+## Anotaciones sobre Imagen
+
+### Crear una nueva categoría de anotación de imagen
+
+1. Entra en la pestaña **Ontology**
+2. Busca la sección **Anotaciones sobre imagen**
+3. Añade una nueva línea con los siguientes datos:
+
+-  **Nombre** de la categoría (ej. *Inicial decorada*)
+-  **Abreviatura** (máx. 3 letras, como `ID`)
+-  **Tipo** (elige según tus necesidades)
+-  **Forma de marcador**:  
+  - *Rectángulo* si quieres dibujar cajas  
+  - *Polígono* si necesitas más flexibilidad para bordes irregulares
+-  **Color**: puedes dejar el que aparece o elegir otro
+-  Marca “Permitir comentarios” si quieres que al añadir una anotación, se pueda escribir una nota
+
+
+>  **Importante sobre la abreviatura**  
+> La **abreviatura** se convierte en un botón que aparece en el panel “Imagen fuente” cuando estás editando.  
+> ⚠️ Si cambias la abreviatura después de crear la categoría, será como **borrar y volver a crear la categoría**, y perderás las anotaciones anteriores.  
+> En cambio, **sí puedes cambiar** el nombre, color o tipo **sin perder nada**.
+
+###  Dibujar una anotación sobre una imagen
+
+1. Ve a la página de **Edición** (`Editar`)
+2. Abre el panel **Imagen fuente** con `Ctrl + 1`
+3. Haz clic en el botón de la categoría que creaste
+4. Dibuja la forma sobre la imagen:
+
+#### Para un rectángulo:
+
+- Coloca el ratón en la **esquina superior izquierda**
+- Haz clic y arrastra hasta la **esquina inferior derecha**
+- Suelta el clic → se crea el rectángulo
+
+#### Para un polígono:
+
+- Haz clic en varios puntos alrededor del área que quieras marcar
+- Para cerrar el polígono, **haz doble clic** en el último punto
+
+Si la categoría permite comentarios, se abrirá una ventana para escribir.
+
+
+###️ Eliminar una anotación sobre imagen
+
+- Haz clic sobre la anotación que quieras borrar
+- Luego, haz clic en el icono de papelera 🗑️  
+  o simplemente pulsa la tecla `Delete` o `Suprimir`
+
+
+### Eliminar una categoría de anotación
+
+> ⚠️ **¡Cuidado!**  
+> Si borras una categoría desde la Ontología, también se **borran todas las anotaciones** hechas con ella.
+
+1. Ve a la página de **Ontología**
+2. En la sección de anotaciones sobre imagen, pulsa el botón `X` al final de la fila
+3. Haz clic en **Actualizar** para confirmar
+
+
+## Anotaciones sobre Texto
+
+Las anotaciones sobre texto funcionan de forma muy parecida a las de imagen: se crean y gestionan desde la página de **Ontología**.
+
+### Añadir una anotación sobre texto
+
+1. Ve a la página de **Edición**
+2. Abre el panel **Texto** con `Ctrl + 4`
+3. Haz clic en el botón de la categoría que desees usar
+4. Selecciona con el ratón la parte del texto que quieres marcar
+5. Haz clic en **Aceptar / OK**
+
+¡Y listo! Tu anotación estará aplicada.
+
+
+### ️ Eliminar una anotación sobre texto
+
+1. Haz clic sobre la anotación
+2. Pulsa el icono de papelera 🗑️ para borrarla
+
+
+### Wxportar anotaciones de texto e imágenes
+
