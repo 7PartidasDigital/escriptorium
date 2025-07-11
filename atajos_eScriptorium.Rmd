@@ -1,0 +1,149 @@
+---
+title: "Atajos en eScriptorium"
+author: "Filología Digital"
+date: "2025-07-09"
+output: 
+  html_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+eScriptorium tiene muchas funciones, y con ellas, ¡muchos botones! Pero no te preocupes: hay atajos de teclado que te permiten trabajar más rápido, sin tener que estar cambiando todo el rato entre el teclado y el ratón.
+
+
+Esta guía te ayudará a aprender los atajos más útiles, organizados por secciones según la parte de eScriptorium donde los puedes usar.
+
+💡 Consejo: muchos atajos también se muestran al colocar el ratón sobre los botones dentro de la aplicación.
+🌐 URLs en eScriptorium: si ves direcciones como base_url/document/{doc_id}/images/, no te asustes. Solo indican en qué parte de la aplicación estás trabajando.
+
+Los atajos están organizados según las páginas o paneles donde pueden aplicarse.
+
+⚠️ Nota: La mayoría de los atajos están documentados dentro de la propia aplicación al pasar el cursor por encima de un botón o un elemento interactivo.
+
+
+# Panel de Imágenes
+URL típica: base_url/document/{doc_id}/images/
+Seleccionar varias páginas de una vez:
+
+Haz clic en la casilla de una miniatura
+
+Luego, mantén pulsado Shift y haz clic en otra casilla → Se seleccionarán todas las páginas entre ambas
+
+
+# Página de Edición
+URL típica: base_url/document/{doc_id}/part/{doc_part}/edit/
+
+## Navegación general
+Ctrl + → o Page Down: ir a la siguiente página
+
+Ctrl + ← o Page Up: ir a la página anterior
+
+## Mostrar / ocultar paneles
+Control + 1: mostrar/ocultar el panel de Metadatos
+
+Control + 2: mostrar/ocultar el panel de Imagen fuente
+
+Control + 3: mostrar/ocultar el panel de Segmentación
+
+Control + 4: mostrar/ocultar el panel de Transcripción
+
+Control + 5: mostrar/ocultar el panel de Texto
+
+💡 Nota sobre teclados Mac:
+
+Shift + Control + → o fn + Page Down: ir al siguiente elemento
+
+Shift + Control + ← o fn + Page Up: ir al elemento anterior
+
+## Panel de Imagen Fuente
+Este panel muestra la imagen original de la página.
+
+Ctrl + Backspace: reiniciar el zoom (volver al tamaño original)
+
+Botón derecho + arrastrar: mover la imagen ampliada
+
+Escape: cancelar una anotación que estás dibujando
+
+Suprimir/Delete: eliminar una anotación activa
+
+Mac: haz clic derecho tocando con dos dedos en el trackpad
+fn + Backspace: borra anotaciones activas
+
+## Panel de Segmentación
+Este panel tiene la mayor cantidad de atajos. Todos están explicados también al hacer clic en el botón ? en la parte superior del panel.
+
+### Zoom y movimiento
+Ctrl + Backspace: reiniciar zoom
+
+Botón derecho + arrastrar: mover la imagen
+
+### Dibujar y editar líneas o regiones
+Escape: cancelar el trazado si te equivocas
+
+Ctrl + Z: deshacer la última acción
+
+Ctrl + Y: rehacer lo que deshiciste
+
+Ctrl + A: seleccionar todo
+
+Shift + clic y arrastrar: seleccionar varias líneas, regiones o puntos
+
+Shift + clic sobre una línea: añadir o quitar de la selección
+
+Ctrl + clic y arrastrar sobre lo seleccionado: mover todo junto
+
+Delete: eliminar líneas o regiones seleccionadas
+
+Ctrl + Delete: eliminar solo puntos seleccionados (sin borrar toda la línea o región)
+
+### Otras acciones útiles
+R: cambiar entre modo línea y modo región
+
+L: mostrar u ocultar el orden de lectura
+
+M: activar o desactivar las máscaras
+
+C: activar el modo tijera (para cortar líneas o regiones)
+
+T: cambiar el tipo de línea o región seleccionada (puedes usar el teclado numérico para elegir el tipo)
+
+I: invertir la dirección de lectura de las líneas seleccionadas
+
+J: unir varias líneas en una sola
+
+Y: vincular líneas a regiones del fondo
+
+U: desvincular líneas de regiones del fondo
+
+ Mac:
+
+fn + Backspace: borrar selección
+
+fn + Ctrl + Backspace: borrar solo puntos seleccionados
+
+## Panel de Transcripción
+Aquí es donde introduces o corriges el texto línea por línea.
+
+Flecha abajo o Enter: guardar el texto y pasar a la siguiente línea
+
+Flecha arriba: volver a la línea anterior
+
+Escape: cerrar la ventana de transcripción
+
+## Panel de Texto
+Si hay anotaciones de texto activadas:
+
+Escape: cancelar anotación en curso
+
+Si estás reordenando líneas (modo de orden activo):
+
+Shift + clic: seleccionar varias líneas seguidas
+
+Ctrl + clic: añadir o quitar líneas individuales de la selección
+
+## Teclado Virtual
+En eScriptorium puedes configurar un teclado virtual con tus propios atajos personalizados.
+Desde el menú de edición del teclado virtual, puedes crear combinaciones de teclas para insertar caracteres especiales o ejecutar acciones rápidamente.
+
