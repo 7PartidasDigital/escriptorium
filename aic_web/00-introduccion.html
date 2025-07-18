@@ -41,13 +41,13 @@
 </head>
 <body>
 <h1>Introducción</h1>
-<h2>Digitalización</h2>
+<h2 id="#digitalizacion">Digitalización</h2>
 <p class="parrafo">Durante décadas, bibliotecas y archivos de todo el mundo han realizado un esfuerzo constante por digitalizar sus colecciones, con el objetivo de preservar el patrimonio documental y facilitar el acceso universal a la información. Esta labor no solo ha permitido proteger materiales frágiles del deterioro causado por la manipulación física, sino que también ha democratizado el acceso al conocimiento, permitiendo que cualquier persona, sin importar su ubicación geográfica, pueda consultar documentos históricos, libros raros y manuscritos valiosos.</p>
 <p class="parrafo">Sin embargo, en sus primeras etapas, la digitalización consistía principalmente en la creación de imágenes electrónicas —fotografías digitales o escaneos— de los originales. Aunque estos archivos visuales representaban fielmente el aspecto físico de los documentos, su contenido seguía siendo inaccesible para la mayoría de los usuarios. Solo quienes poseían habilidades especializadas para descifrar la caligrafía antigua o las tipografías de épocas pasadas podían realmente interpretar la información contenida en estas imágenes. Para los ordenadores, estas reproducciones no eran más que conjuntos de píxeles, es decir, secuencias de ceros y unos que no podían ser procesadas como texto ni analizadas automáticamente.</p>
-<p class="parrafo">Conscientes de esta limitación, investigadores de campos dispares han trabajado durante años en el desarrollo de herramientas capaces de transformar estas imágenes en texto editable y manipulable digitalmente. Gracias a los avances en el reconocimiento óptico de caracteres (OCR) y, más recientemente, en la inteligencia artificial y el aprendizaje automático, se han desarrollado sistema de reconocimiento automático de letra manuscrita, por lo que hoy en día es posible subir la imagen de un documento a un ordenador y obtener, en cuestión de segundos, un archivo de texto editable.<p/>
+<p class="parrafo">Conscientes de esta limitación, investigadores de campos dispares han trabajado durante años en el desarrollo de herramientas capaces de transformar estas imágenes en texto editable y manipulable digitalmente. Gracias a los avances en el reconocimiento óptico de caracteres (OCR) y, más recientemente, en la inteligencia artificial y el aprendizaje automático, se han desarrollado sistemas de reconocimiento automático de letra manuscrita, por lo que hoy en día es posible subir la imagen de un documento a un ordenador y obtener, en cuestión de segundos, un archivo de texto editable.<p/>
 <p class="parrafo">La incorporación de estas tecnologías ha revolucionado el trabajo de investigadores en filología e historia, al facilitar el acceso y el análisis de fuentes documentales antes inaccesibles o difíciles de consultar. Ahora es posible realizar búsquedas automáticas en grandes corpus textuales, comparar variantes de manuscritos, analizar patrones lingüísticos o literarios. Lo que amplía enormemente las posibilidades de investigación, preservación y difusión del conocimiento en estos campos especializados.</p>
 <br />
-    <h2>Optical Character Recognition (OCR)</h2>
+    <h2 id="#ocr">Optical Character Recognition (OCR)</h2>
     <p class="parrafo">
         El <strong>Optical Character Recognition</strong> (OCR) es una tecnología que permite la conversión electrónica o mecánica de imágenes de texto impreso —como libros o periódicos— en texto codificado digitalmente. Los primeros desarrollos de OCR datan de principios del siglo XX, con inventos como el “Statistical Machine” de Emanuel Goldberg en la década de 1920 y la patente de Gustav Tauschek en 1935. Sin embargo, el término y la tecnología OCR como se conocen hoy se consolidaron a finales de los años 50, cuando IBM introdujo sistemas capaces de capturar datos de documentos impresos de manera automatizada. El OCR se caracteriza por su enfoque en el reconocimiento de caracteres impresos, utilizando principalmente el análisis de formas y patrones de los caracteres.</p>
         <p class="parrafo">Sin embargo, no todos los textos impresos son aptos para someterlos a programas de OCR. Así, numerosas bibliotecas y archivos han sometido parte de sus fondos a sistemas de OCR y los resultados son decepcionantes. Valga como muestra la transcripción OCR que la Biblioteca Nacional de España ofrece para el comienzo de la versión castellana del <em>De Regimine principum</em> de <a href="https://es.wikipedia.org/wiki/Egidio_Romano" target="_blank" rel="noopener noreferrer">Egidio Romano</a>, en su versión <a href="https://bdh-rd.bne.es/viewer.vm?id=0000176298&page=5" target="_blank" rel="noopener noreferrer">impresa en 1494</a>.</p>
@@ -56,10 +56,10 @@
 <p class="pie">A la izquierda fragmento del INC/242 de la BNE; a la derecha transcripción OCR</p>
        </center>
        <p class="parrafo">Y como es de suponer, el OCR es inútil para transformar textos manuscritos en texto editable con los ordenadores.</p>
-    <h2>Handwritten Text Recognition (HTR)</h2>
+    <h2 id="#HTR">Handwritten Text Recognition (HTR)</h2>
     <p class="parrafo">
         El <strong>Handwritten Text Recognition</strong> (HTR) es la capacidad de los sistemas computacionales para interpretar y transcribir texto manuscrito a partir de imágenes digitales de documentos, fotografías o imágenes escaneadas.  A diferencia del OCR, el HTR debe afrontar la enorme variabilidad de la escritura manuscrita humana, lo que implica retos técnicos adicionales. Los primeros sistemas de HTR se basaban en reglas heurísticas y segmentación manual, pero el avance de los modelos estadísticos, como los modelos ocultos de Markov (HMM) y las redes neuronales profundas, ha permitido mejoras significativas en la precisión y robustez de estos sistemas en las últimas décadas.</p>
-        <p class="parrafo">Estos sistemas sirven tanto para letra manuscrita como para impresos antiguos. Valga como ejemplo, el mismo texto de antes procesados con las dos plataformas más usadas de HRT: eScriptorium y Transkribus.</p>
+        <p class="parrafo">Estos sistemas sirven tanto para letra manuscrita como para impresos antiguos. Valga como ejemplo, el mismo texto de antes procesado con las dos plataformas más usadas de HRT: eScriptorium y Transkribus.</p>
         <center>
         <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_int_02.png?raw=true" alt="Egido y HTR" style="width: 50%; height: auto;">
 <p class="pie">A la izquierda fragmento del INC/242 de la BNE; a la derecha transcripción HRT eScriptorium</p>
@@ -68,7 +68,7 @@
         <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_int_03.png?raw=true" alt="Egido y HTR" style="width: 50%; height: auto;">
 <p class="pie">A la izquierda fragmento del INC/242 de la BNE; a la derecha transcripción HRT Transkribus</p>
         </center>
-        <p class="parrafo">Ambas han hecho un trabajo magnífico. Pero para lograrlo, unos <em>duendecillos</em> han preparado, trabajosamente, modelos para que las imágenes, ya sean `jpg`, `png`, `tiff` o extraídas de `pdf` se puedan convertir en texto editable y manejable con los ordenadores para después usarlas en otros procesos.</p>
+        <p class="parrafo">Ambas han hecho un trabajo magnífico. Pero para lograrlo, unos <em>duendecillos</em> han preparado, trabajosamente, modelos para que las imágenes, ya sean `jpg`, `png`, `tiff` o extraídas de `pdf`, se puedan convertir en texto editable y manejable con los ordenadores para después usarlos en otros procesos.</p>
         <br />
     <p class="parrafo">
         La diferencia principal entre ambas tecnologías radica en el tipo de texto que cada una de ellas aborda y en la complejidad de los algoritmos empleados. El OCR se especializa en texto impreso moderno, donde la regularidad tipográfica facilita el reconocimiento. El HTR, por su parte, debe enfrentarse a la diversidad de estilos manuscritos y tipográficos pretéritos, por lo que requiere técnicas más sofisticadas, que permiten la digitalización automatizada de cualquier tipo de texto, gracias a la integración de modelos de inteligencia artificial y aprendizaje profundo.
@@ -76,7 +76,7 @@
     <p class="parrafo">
         El OCR fue pionero en la digitalización de textos impresos, el HTR amplió el alcance a documentos manuscritos e impresos antiguos.</p>
 <br />
-<h2>El proceso</h2>
+<h2 id="#proceso">El proceso</h2>
 <p class="parrafo">El convertir las reproducciones digitales que nos ofrecen bibliotecas y archivos en texto editable y procesable con otras herramientas informáticas está al alcance de cualquiera que tenga acceso a una plataforma HTR.</p>
 <center>
         <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_int_04.png?raw=true" alt="Flujo" style="width: 50%; height: auto;">

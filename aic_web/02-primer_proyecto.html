@@ -11,11 +11,13 @@
     .center { display: block; margin-left: auto; margin-right: auto; }
     .parrafo {margin-left: 2em; margin-right: 2em; }
     .pie {font-size: 0.85em; }
+    ul {margin-left: 40px; }
   </style>
 </head>
 <body>
 <h1>Crear un proyecto</h1>
-<p class="parrafo">Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. En <code>eS</code> un <strong>proyecto</strong> es un conjunto de <strong>documentos</strong> que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en <code>My Projects</code> en la barra negra superior y, a continuación, haz pulsa el botón verde de la derecha que dice <code>Create new Project</code>.</p>
+<h2 id="#newpro">Crear un nuevo proyecto</h2>
+<p class="parrafo">Ahora que ya has configurado tu perfil, es hora de crear tu primer proyecto. En <code>eS</code> un <strong>proyecto</strong> es un conjunto de <strong>documentos</strong> que quieres transcribir o editar. Para crear un nuevo proyecto, haz clic en <code>My Projects</code> en la barra negra superior y, a continuación, pulsa el botón verde de la derecha que dice <code>Create new Project</code>.</p>
 <p class="parrafo">Aparecerá una ventana donde podrás introducir el nombre del proyecto y una descripción del mismo. Generalmente será el manual de transcripción en el que se establecen las pautas que se seguirán. Puede ser una URL a un documento externo.</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_009.png?raw=true" alt="" style="width: 60%; height: auto;">
@@ -31,7 +33,7 @@
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_011.png?raw=true" alt="" style="width: 60%; height: auto;">
 </center>
-<h2>Crear nuevo documento</h2>
+<h2 id="#newdoc">Crear nuevo documento</h2>
 <p class="parrafo">Para crear un nuevo documento, haz clic en la pestaña <code>Documents</code>. Verás que está totalmente vacío. En la parte superior, verás un botón verde que dice <code>Create new Document</code>. Haz clic en él y aparecerá una nueva ventana donde introducirás los metadatos del documento.</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012.png?raw=true" alt="" style="width: 60%; height: auto;">
@@ -41,8 +43,15 @@
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_012a.png?raw=true" alt="" style="width: 60%; height: auto;">
 </center>
 <p class="parrafo">Si todo ha ido bien, aparecerá un mensaje que dice <code>Document created successfully</code> y que la banda verde ya no dice <code>Create</code> sino <code>Update</code>, por si quieres actualizar algún elemento de los metadatos del documento.</p>
-<p class="parrafo">Debajo de la banda negra superior, verás varias pestañas <code>Description</code>, que es donde estás; <code>Ontology</code>, que es donde puedes añadir información sobre el documento el tipo de segmentación (pero esto ya es una cosa avanzadísima); <code>Images</code>, que es donde subirás las imágenes del documento; y <code>Reports</code>, que es donde podrás ver los informes generados por <code>eS</code> sobre el documento. Hay otras dos <code>Edit</code> y <code>Models</code> que están inactivas porque no funcionan en esta parte.</p>
-<p class="parrafo">A continuación haz clic en <code>Images</code>. Aquí es el lugar por medio del cual subirías las imágenes al servidor. Si las tienes en <code>jpg</code>, <code>png</code> o <code>tiff</code> solo tienes que arrastrarlas desde la carpeta en que las tengas y soltarlas en la ventana o, si lo prefieres, hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.</p>
+<p class="parrafo">Debajo de la banda negra superior, verás varias pestañas:</p> 
+<ul>
+<li><code>Description</code>, que es donde estás.</li>
+<li><code>Ontology</code>, que es donde puedes añadir información sobre el documento el tipo de segmentación (pero esto ya es una cosa avanzadísima).</li>
+<li><code>Images</code>, que es donde subirás las imágenes del documento.</li>
+<li><code>Reports</code>, que es donde podrás ver los informes generados por <code>eS</code> sobre el documento.</li>
+</ul>
+<p class="parrafo">Hay otras dos <code>Edit</code> y <code>Models</code> que están inactivas porque no funcionan en esta parte.</p>
+<p class="parrafo">A continuación haz clic en <code>Images</code>. Aquí es el lugar por lugar desde el cual subirás las imágenes al servidor. Si las tienes en <code>jpg</code>, <code>png</code> o <code>tiff</code> solo tienes que arrastrarlas desde la carpeta en que las tengas y soltarlas en la ventana o, si lo prefieres, hacer clic para navegar por el sistema de carpetas de tu ordenador hasta localizarlas.</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_013.png?raw=true" alt="" style="width: 60%; height: auto;">
 </center>
@@ -62,7 +71,7 @@
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_015.png?raw=true" alt="" style="width: 25%; height: auto;">
 </center>
-<p class="parrafo">Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes. Mientras suben las imágenes, el botón <code>Import</code> parpadeará y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice. (La imagen que tienes a continuación no corresponde al documento que estás cargando, sino a otro, para que puedas ver el contador de carga y el botón de parar.)</p>
+<p class="parrafo">Poco a poco irán apareciendo las imágenes del documento. Si el documento es muy grande, puede tardar un poco en subir todas las imágenes. Mientras se suben las imágenes, el botón <code>Import</code> parpadeará y habrá información a su derecha con un icono en amarillo. Ese sirve para cancelar la operación. No lo hagas, espera hasta que finalice. (La imagen que tienes a continuación no corresponde al documento que estás cargando, sino a otro, para que puedas ver el contador de carga y el botón de parar.)</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_016.png?raw=true" alt="" style="width: 60%; height: auto;">
 </center>
