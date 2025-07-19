@@ -16,16 +16,16 @@
 </head>
 <body>
 <h1>Transcripción de documentos con eScriptorium</h1>
-<h2 id="#intro">Introducción</h2>
+<h2 id="intro">Introducción</h2>
 <p class="parrafo">Una vez finalizada la segmentación y la revisión de la misma, puedes proceder a la transcripción de los documentos.<br />El grupo de investigación <em>Filología Digital</em> de la Universidad de Valladolid, en conjunción con el <em>Hispanic Seminary of Medieval Studies</em>, está desarrollando varios modelos para la transcripción de manuscritos medievales e impresos en letra gótica castellanos. Aquí por <em>castellano</em> entendemos el ámbito iberorrománico central.<br />Las normas por las que se rigen las transcripciones del <em>Hispanic Seminary of Medieval Studies</em> (HSMS en adelante) las puedes obtener <a href="https://www.hispanicseminary.org/docs/HSMS-manual.pdf"  target="_blank" rel="noopener noreferrer">pulsando este enlace</a>. Estas se pueden calificar como semipaleográficas.<br />Los modelos de transcripción que se han entrenado dentro del grupo UVa_HSMS desarrollan las abreviaturas y se marcan encerrándolas entre signos de mayor y menor que (＜ ＞), mientras que las letras superescritas se marcan posponiéndoles un acento agudo (<code>`</code>).  Ninguno de los otros elementos que se pueden marcar en la transcripción, como rúbricas, iniciales, encabezamientos, signaturas, reclamos, etc., aunque se transcriben automáticamente, no se etiquetan. Podría haberse hecho durante la fase de segmentación, pero no se ha realizado porque hemos considerado que es mejor introducirlos durante la fase de corrección (véase el capítulo <em>Edición</em>) para reducir el ruido que podría producirse durante la fase de transcripción.<br />
-<h2 id="#modelos">Modelos de transcripción</h2>
+<h2 id="modelos">Modelos de transcripción</h2>
 <p class="parrafo">Actualmente, julio de 2025, solo tenemos un modelo totalmente operativo, el llamado <code>INCUNABLES_HSMS_v3_1.2_best</code> (también se le designa <code>UVa_HSMS_Print</code>), que tiene una tasa de éxito cercana al 99 %. Se ha diseñado para impresos en letra gótica publicados básicamente en español, portugués y catalán, aunque estas dos últimas lenguas no se han contemplado en el desarrollo del modelo. Para la información de cómo se ha creado este modelo véanse los artículos de Fradejas y Cossio 2025 y de Fradejas 2025.<br />Sin embargo, hemos incorporado dos versiones de <a href="https://catmus-guidelines.github.io/" target="_blank" rel="noopener noreferrer">CatMuS</a> (<code>catmus-medieval</code> y <code>CatMus-Medieval-160</code>), dos versiones muy interesantes modelo de transcripción desarrollado en Francia y que es capaz de transcribir manuscritos e impresos en varias lenguas medievales. La única <em>pega</em> es que no desarrolla las abreviaturas, y tomaron una decisión que estimamos poco acertada y que complica el uso de este modelo. Decidieron que los pares <em>u</em> / <em>v</em> y <em>i</em> / <em>j</em> se transcribieran como <em>u</em> e <em>i</em>. Es cierto que en latín no hay diferencia fonética, pero en castellano medieval, aunque se usan ambas grafías indistintamente tanto para los fonemas vocálicos como para los consonánticos, la diferencia fonética es importante y <em>normativizar</em> indiscriminadamente estas grafías puede llevar a errores.</p>
 <p class="parrafo">Hay otros dos modelos para la lengua alemana: <code>autriannewspapers</code> y <code>typewriter_best</code>. Este último se puede usar para transcribir textos en español escritos con máquina de escribir pero hay fallos con la <em>ñ</em>, las letras acentuadas y los signos de apertura de interrogación (?) y exclamación (!), una característica exclusiva del español. Lo estamos empleando como base para crear un modelo para la transcripción de textos en español escritos con máquina de escribir, pero aún no está disponible.<br />
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_025.png?raw=true" style="width: 60%; height: auto;">
 <p class ="pie">Modelos disponibles en <em>eScriptorium</em></p>
 </center>
-<h2 id="#transcripcion">Transcripción de documentos</h2>
+<h2 id="transcripcion">Transcripción de documentos</h2>
 <p class="parrafo">Entra en <em>eScriptorium</em> y selecciona el documento <code>INCUNABLE_01</code> que has segmentado y revisado en el capítulo anterior. Cuando tengas las miniaturas a la vista, pulsa el botón <code>Select all</code>. Todas la miniaturas se seleccionarán y tendrán el marco de color negro. Verás que todas tienen las rayitas verdes de la segmentación que realizaste en el capítulo anterior. Ahora haz clic en el botón <code>Transcribe</code>. Se abrirá una ventana de diálogo.<br />
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_060.png?raw=true" style="width: 25%; height: auto;">
@@ -61,7 +61,7 @@
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true" style="width: 50%; height: auto;">
 </center>
 <p class="parrafo">En la esquina superior izquierda hay tres botones. Dos son evidentes, son flechas para avanzar o retroceder línea a línea por la hoja. Eso mismo lo puedes hacer con las flechas del teclado. El tercer botón, el de la <code>x</code>, sirve para cerrar la ventana del editor.</p>
-<h2 id="#teclado">Teclado virtual</h2>
+<h2 id="teclado">Teclado virtual</h2>
 <p class="parrafo">El tercer botón, de fondo claro y que parece tener un teclado dentro, es el que activa el teclado virtual. Si lo pulsas, se abrirá una ventana con un teclado virtual que te permitirá introducir caracteres especiales, como el calderón <code>¶</code>, o los signos que en el <em>HSMS</em> utilizamos para marcar el desarrollo de las abreviaturas. Por ahora son <code>⊂</code> y <code>⊃</code>, que no son los que puedes acceder desde el teclado, sino una versión especial que no es accesible fácilmente desde el teclado.</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_068.png?raw=true" style="width: 50%; height: auto;">
@@ -85,7 +85,7 @@
 </center>
 <p class="parrafo">Ya tienes a tu disposición el teclado virtual del <em>HSMS</em>. Puedes usarlo para introducir los signos de desarrollo de abreviaturas y las letras superescritas y algunas etiquetas con las que marcamos los textos para procesarlos morfológicamente.<br />
 ¡Ah! Tienes la posibilidad de editarlo, exportarlo o borrarlo. Por ahora déjalo como está. 
-<h2 id="#correccion">Corrección de la transcripción</h2>
+<h2 id="correccion">Corrección de la transcripción</h2>
 <p class="parrafo">Puesto que ya tienes el teclado del <em>HSMS</em> disponible, vas a corregir los errores que hay en la transcripción.<br />
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_067.png?raw=true" style="width: 40%; height: auto;">
@@ -103,7 +103,7 @@
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_073.png?raw=true" style="width: 40%; height: auto;">
 </center>
 <p class="parrafo">La línea inferior te dice qué es lo que leyó el modelo, y en las otras dos te informará quién y cuándo lo cambió. Esto es muy interesante cuando se trabaja en equipo, ya que permite ver quién ha hecho qué y cuándo.</p>
-<h2 id="#texto">Panel texto</h2>
+<h2 id="texto">Panel texto</h2>
 <p class="parrafo">Hay un tercer panel que puedes activar para corregir el texto. No es tan cómodo como el editor de transcripción puesto que no tendrás la línea original a la vista. Sin embargo, este panel de edición encierra una posibilidad: reordenar manualmente las líneas de la transcripción.</p>
 <p class="parrafo">En el texto que estás manejando no ha habido ningún problema que no se haya arreglado con la función de reordenar automáticamente las líneas. Lo viste cuando hablamos de la segmentación. Sin embargo, te lo voy a explicar, por lo que manipularás un par de líneas para que veas cómo funciona. Recuerda que para deshacer cualquier cosa basta con que pulses <code>control</code> (o <code>cmd</code> en los Mac) y <code>Z</code>.</p>
 <p class="parrafo">Activa el último icono que hay arriba, a la derecha. El que tiene tres rayitas con un número en el margen. Ahora tendrás, espero, los tres paneles básicos: a la izquierda el de segmentación, en el centro el de transcripción y a la derecha el de texto. Si no es así, pulsa los tres iconos de la derecha, deberán estar en azul.</p>
@@ -117,7 +117,7 @@
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_074a.png?raw=true" style="width: 80%; height: auto;">
 </center>
 <p class="parrafo">A veces, tienes que mover más de una línea que están consecutivas (es raro que eso suceda, pero con los ordenadores nunca se sabe). Para seleccionar varias líneas consecutivas, has de hacer clic en la primera línea mantener pulsada la tecla de mayúsculas y hacer clic en la otra línea que quieres seleccionar.</p>
-<h2 id="#descarga">Descargar los resultados</h2>
+<h2 id="descarga">Descargar los resultados</h2>
 <p class="parrafo">Una vez que hayas acabado la transcripción y la hayas revisado, puedes descargar los resultados. Para ello, pulsa la pestaña <code>Images</code>, que te llevará a la pantalla en la que tienes todas las miniaturas. Ahora tienes que decidir si quieres descargar la trascripción de todas las imágenes o tan solo una de ellas o una selección. Vas a descargar todo (es un texto muy breve). Para ello, pulsa el botón <code>Select all</code>. Todos los marcos de las miniaturas se habrán vuelto negros. Ahora haz clic en el botón <code>Export</code> y aparecerá el diálogo de exportación.</p>
 <center>
 <img src="https://github.com/7PartidasDigital/escriptorium/blob/main/imagenes/eS_UVa_075.png?raw=true" style="width: 30%; height: auto;">
