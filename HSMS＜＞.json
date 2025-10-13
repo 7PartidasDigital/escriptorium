@@ -357,6 +357,11 @@
             "column": 11,
             "row": 4
         }
-       
+       {
+            "character": "{IN1.} [^",
+            "keyboard_code": null,
+            "column": 13,
+            "row": 4
+        }
     ]
 }
